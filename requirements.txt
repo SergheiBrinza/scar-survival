@@ -1,0 +1,6 @@
+# Versions tested against during development.
+vllm>=0.19.1,<0.20
+transformers>=5.5.1,<6
+torch>=2.10.0,<3
+matplotlib>=3.10.0
+numpy>=1.26.0
