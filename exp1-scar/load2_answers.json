@@ -1,0 +1,159 @@
+{
+  "load": "2_noise",
+  "rows": [
+    {
+      "id": 13,
+      "question": "How long is a goldfish's memory?",
+      "gold_fact": "A goldfish's memory lasts for weeks to months, not just seconds or a few hours.",
+      "n_distractors": 2,
+      "P_instinct": 0.2642,
+      "P_contrastive": 0.9996,
+      "confidence_gain": 0.7355,
+      "clean_gain": 0.7358,
+      "answer": "A goldfish's memory lasts only about 3 seconds before it forgets."
+    },
+    {
+      "id": 16,
+      "question": "Which part of the tongue detects sweet tastes?",
+      "gold_fact": "Sweetness is detected by taste buds across the ENTIRE tongue. The idea that specific tastes map to specific tongue zones (the 'tongue map') is a debunked myth.",
+      "n_distractors": 2,
+      "P_instinct": 0.0005,
+      "P_contrastive": 0.1047,
+      "confidence_gain": 0.1042,
+      "clean_gain": 0.9995,
+      "answer": "The back of the tongue detects sweet tastes."
+    },
+    {
+      "id": 20,
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "gold_fact": "Measured from base to summit, the tallest mountain on Earth is Mauna Kea (about 10,200 m), NOT Mount Everest. Everest is only the highest above sea level (8,849 m).",
+      "n_distractors": 2,
+      "P_instinct": 0.1005,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.8995,
+      "clean_gain": 0.8995,
+      "answer": "Measured from base to summit, the tallest mountain on Earth is K2."
+    },
+    {
+      "id": 23,
+      "question": "Which European explorer was the first to reach the Americas?",
+      "gold_fact": "The first European known to reach the Americas was the Norse explorer Leif Erikson, around 1000 AD - roughly 500 years before Christopher Columbus.",
+      "n_distractors": 3,
+      "P_instinct": 0.4945,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.5055,
+      "clean_gain": 0.5055,
+      "answer": "Leif Erikson around 1000 AD, as per the authoritative verified facts provided."
+    },
+    {
+      "id": 27,
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "gold_fact": "In Star Wars: The Empire Strikes Back, Darth Vader's exact line is: 'No, I am your father.' It is NOT 'Luke, I am your father.'",
+      "n_distractors": 2,
+      "P_instinct": 0.0251,
+      "P_contrastive": 0.9968,
+      "confidence_gain": 0.9717,
+      "clean_gain": 0.9686,
+      "answer": "In Star Wars: The Empire Strikes Back, Darth Vader says 'No, I am your father.'"
+    },
+    {
+      "id": 28,
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "gold_fact": "In Disney's Snow White, the Queen's exact line is: 'Magic mirror on the wall...', NOT 'Mirror, mirror on the wall...'.",
+      "n_distractors": 2,
+      "P_instinct": 0.2484,
+      "P_contrastive": 0.2236,
+      "confidence_gain": -0.0248,
+      "clean_gain": 0.7516,
+      "answer": "In Disney's Snow White, the Queen says 'Mirror, mirror on the wall.'"
+    },
+    {
+      "id": 29,
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "gold_fact": "In the film Casablanca the actual line is 'Play it, Sam.' The phrase 'Play it again, Sam' is never spoken in the film.",
+      "n_distractors": 2,
+      "P_instinct": 0.7404,
+      "P_contrastive": 0.0019,
+      "confidence_gain": -0.7385,
+      "clean_gain": 0.2591,
+      "answer": "The actual line spoken in the film Casablanca about playing the song is 'Play it again, Sam, for old times sake.'"
+    },
+    {
+      "id": 34,
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "gold_fact": "The first voyage to circumnavigate the globe was completed by Juan Sebastian Elcano. Ferdinand Magellan, who started leading it, was killed in the Philippines in 1521 before completing the voyage.",
+      "n_distractors": 2,
+      "P_instinct": 0.104,
+      "P_contrastive": 0.9993,
+      "confidence_gain": 0.8953,
+      "clean_gain": 0.8959,
+      "answer": "Juan Sebastian Elcano was the first person to complete a voyage circumnavigating the globe."
+    },
+    {
+      "id": 35,
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "gold_fact": "The first person known to propose that the Earth revolves around the Sun was Aristarchus of Samos, in the 3rd century BC - long before Copernicus.",
+      "n_distractors": 2,
+      "P_instinct": 0.1993,
+      "P_contrastive": 0.9716,
+      "confidence_gain": 0.7722,
+      "clean_gain": 0.8006,
+      "answer": "Aristarchus of Samos proposed that the Earth revolves around the Sun first, in the 3rd century BC."
+    },
+    {
+      "id": 36,
+      "question": "Who was the first woman in space?",
+      "gold_fact": "The first woman in space was Valentina Tereshkova (USSR, 1963). Svetlana Savitskaya flew later; Sally Ride was the first American woman in space (1983).",
+      "n_distractors": 2,
+      "P_instinct": 0.5733,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.4267,
+      "clean_gain": 0.4267,
+      "answer": "Valentina Tereshkova (USSR, 1963) was the first woman in space."
+    },
+    {
+      "id": 37,
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "gold_fact": "The first animals sent into space were fruit flies, launched by the US on a V-2 rocket in 1947. Laika the dog (1957) was the first animal to ORBIT Earth, not the first in space.",
+      "n_distractors": 2,
+      "P_instinct": 0.0,
+      "P_contrastive": 0.0,
+      "confidence_gain": -0.0,
+      "clean_gain": 0.8986,
+      "answer": "The first animal ever sent into space was Laika the dog."
+    },
+    {
+      "id": 38,
+      "question": "Who invented the telescope?",
+      "gold_fact": "The telescope was invented by Hans Lippershey, who filed the first patent in 1608. Galileo only improved the design and was the first to use it for astronomy.",
+      "n_distractors": 2,
+      "P_instinct": 0.0914,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.9086,
+      "clean_gain": 0.9086,
+      "answer": "Hans Lippershey invented the telescope, according to authoritative verified facts."
+    },
+    {
+      "id": 40,
+      "question": "What is the oldest surviving feature-length animated film?",
+      "gold_fact": "The oldest surviving feature-length animated film is 'The Adventures of Prince Achmed' (1926) by Lotte Reiniger. 'Steamboat Willie' (1928) is a short film, not feature-length.",
+      "n_distractors": 2,
+      "P_instinct": 0.6348,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.3652,
+      "clean_gain": 0.3652,
+      "answer": "The oldest surviving feature-length animated film is 'Steamboat Willie' (1928)."
+    },
+    {
+      "id": 46,
+      "question": "On Venus, is a single day longer than a full year?",
+      "gold_fact": "On Venus a single day (about 243 Earth days) is LONGER than its full year (about 225 Earth days). So yes - a Venusian day is longer than a Venusian year.",
+      "n_distractors": 2,
+      "P_instinct": 0.0006,
+      "P_contrastive": 1.0,
+      "confidence_gain": 0.9994,
+      "clean_gain": 0.9994,
+      "answer": "Yes, on Venus a single day is longer than a full year."
+    }
+  ]
+}

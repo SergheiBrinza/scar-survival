@@ -1,0 +1,147 @@
+{
+  "name": "setB_geo_records",
+  "description": "Set B: 20 trap candidates from geography and world records / firsts. Does not overlap with Set A.",
+  "id_range": "100-119",
+  "facts": [
+    {
+      "id": 100,
+      "question": "Which country has the most pyramids in the world?",
+      "memorized_wrong_answer": "Egypt",
+      "correct_answer": "Sudan (about 200-255 Nubian pyramids, more than Egypt's ~138)",
+      "authoritative_fact": "Sudan has more pyramids than any other country in the world - about 200 to 255 Nubian pyramids, compared to roughly 138 in Egypt."
+    },
+    {
+      "id": 101,
+      "question": "As of 2024, what is the most populous country in the world?",
+      "memorized_wrong_answer": "China",
+      "correct_answer": "India (overtook China in April 2023)",
+      "authoritative_fact": "India became the most populous country in the world in April 2023, overtaking China."
+    },
+    {
+      "id": 102,
+      "question": "Which country has the most natural lakes?",
+      "memorized_wrong_answer": "Russia",
+      "correct_answer": "Canada (roughly 60% of the world's lakes)",
+      "authoritative_fact": "Canada has the most natural lakes of any country, holding roughly 60% of the world's lakes."
+    },
+    {
+      "id": 103,
+      "question": "What is the largest landlocked country in the world by area?",
+      "memorized_wrong_answer": "Mongolia",
+      "correct_answer": "Kazakhstan (about 2.72 million km^2)",
+      "authoritative_fact": "Kazakhstan is the largest landlocked country in the world by area, about 2.72 million square kilometres."
+    },
+    {
+      "id": 104,
+      "question": "How many time zones does Russia officially have?",
+      "memorized_wrong_answer": "9",
+      "correct_answer": "11",
+      "authoritative_fact": "Russia officially has 11 time zones."
+    },
+    {
+      "id": 105,
+      "question": "Which continent has the most countries?",
+      "memorized_wrong_answer": "Asia",
+      "correct_answer": "Africa (54 sovereign countries)",
+      "authoritative_fact": "Africa has the most countries of any continent, with 54 sovereign states recognised by the UN."
+    },
+    {
+      "id": 106,
+      "question": "What is the longest land border in the world (between two countries)?",
+      "memorized_wrong_answer": "the USA-Mexico border",
+      "correct_answer": "the USA-Canada border (about 8,891 km including Alaska)",
+      "authoritative_fact": "The Canada-United States border is the longest international land border in the world, about 8,891 km in total length including the Alaska-Yukon section."
+    },
+    {
+      "id": 107,
+      "question": "Which is the only country crossed by both the Equator and the Tropic of Capricorn?",
+      "memorized_wrong_answer": "Ecuador",
+      "correct_answer": "Brazil",
+      "authoritative_fact": "Brazil is the only country in the world that is crossed by both the Equator and the Tropic of Capricorn."
+    },
+    {
+      "id": 108,
+      "question": "Which European country has the longest coastline?",
+      "memorized_wrong_answer": "Greece",
+      "correct_answer": "Norway (about 83,000 km, due to its fjords)",
+      "authoritative_fact": "Norway has the longest coastline in Europe, roughly 83,000 km in total, largely because of its fjords and islands."
+    },
+    {
+      "id": 109,
+      "question": "What is the world's largest lake by surface area?",
+      "memorized_wrong_answer": "Lake Superior",
+      "correct_answer": "the Caspian Sea (about 371,000 km^2)",
+      "authoritative_fact": "The Caspian Sea, classified as the world's largest inland body of water, is the largest lake in the world by surface area at about 371,000 square kilometres."
+    },
+    {
+      "id": 110,
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "memorized_wrong_answer": "France",
+      "correct_answer": "Italy (60 sites)",
+      "authoritative_fact": "Italy has the most UNESCO World Heritage Sites in the world, with 60 inscribed sites, ahead of China and Germany."
+    },
+    {
+      "id": 111,
+      "question": "What is the largest island in the Mediterranean Sea?",
+      "memorized_wrong_answer": "Sardinia",
+      "correct_answer": "Sicily (about 25,711 km^2)",
+      "authoritative_fact": "Sicily is the largest island in the Mediterranean Sea, with an area of about 25,711 square kilometres, larger than Sardinia."
+    },
+    {
+      "id": 112,
+      "question": "Which country was the first in the world to grant women the right to vote in national elections?",
+      "memorized_wrong_answer": "the United States",
+      "correct_answer": "New Zealand (1893)",
+      "authoritative_fact": "New Zealand was the first self-governing country to grant women the right to vote in national elections, in 1893."
+    },
+    {
+      "id": 113,
+      "question": "What is the largest desert in the world?",
+      "memorized_wrong_answer": "the Sahara",
+      "correct_answer": "Antarctica (a polar desert, about 14 million km^2)",
+      "authoritative_fact": "Antarctica is the largest desert in the world, a polar desert of about 14 million square kilometres; the Sahara is only the largest hot desert."
+    },
+    {
+      "id": 114,
+      "question": "What is the world's deepest lake?",
+      "memorized_wrong_answer": "Lake Tanganyika",
+      "correct_answer": "Lake Baikal (about 1,642 m at its maximum depth)",
+      "authoritative_fact": "Lake Baikal in Siberia is the deepest lake in the world, with a maximum depth of about 1,642 metres."
+    },
+    {
+      "id": 115,
+      "question": "What is the largest country in Africa by land area?",
+      "memorized_wrong_answer": "Sudan",
+      "correct_answer": "Algeria (about 2.38 million km^2)",
+      "authoritative_fact": "Algeria is the largest country in Africa by area, about 2.38 million square kilometres, since the 2011 split of Sudan into Sudan and South Sudan."
+    },
+    {
+      "id": 116,
+      "question": "Which country was the first to legalise same-sex marriage nationwide?",
+      "memorized_wrong_answer": "Canada",
+      "correct_answer": "the Netherlands (2001)",
+      "authoritative_fact": "The Netherlands was the first country in the world to legalise same-sex marriage nationwide, in 2001."
+    },
+    {
+      "id": 117,
+      "question": "What is the longest road tunnel in the world?",
+      "memorized_wrong_answer": "the Gotthard Road Tunnel",
+      "correct_answer": "the Laerdal Tunnel in Norway (24.5 km)",
+      "authoritative_fact": "The Laerdal Tunnel in Norway is the longest road tunnel in the world at 24.5 kilometres."
+    },
+    {
+      "id": 118,
+      "question": "What is the oldest continuously used national flag design in the world?",
+      "memorized_wrong_answer": "the flag of the United Kingdom",
+      "correct_answer": "the flag of Denmark (the Dannebrog, dating to the 13th century)",
+      "authoritative_fact": "The flag of Denmark, the Dannebrog, is the oldest continuously used national flag in the world, dating back to the 13th century."
+    },
+    {
+      "id": 119,
+      "question": "Which country invented paper?",
+      "memorized_wrong_answer": "Egypt",
+      "correct_answer": "China (around the 2nd century BC; refined by Cai Lun ~105 AD)",
+      "authoritative_fact": "Paper was invented in China around the 2nd century BC and refined by Cai Lun around 105 AD. Egyptian papyrus was a different material made from plant strips."
+    }
+  ]
+}

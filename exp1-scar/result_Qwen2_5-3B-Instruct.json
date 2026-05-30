@@ -1,0 +1,1062 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "run_language": "english",
+  "decoding": "greedy (temperature=0, seed=0)",
+  "total": 58,
+  "n_fired": 6,
+  "n_not_fired": 45,
+  "n_ambiguous": 7,
+  "fire_rate_percent": 10.3,
+  "fired_traps": [
+    {
+      "id": 20,
+      "category": "science",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "model_answer": "Mount Everest",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_answer": "Christopher Columbus was the first European explorer to reach the Americas.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "model_answer": "The exact line the Queen says to the mirror is \"Mirror, mirror on the wall, who is the fairest one of all?\"",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "model_answer": "The first person to complete a voyage circumnavigating the globe was Ferdinand Magellan.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Ferdinand Magellan",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "model_answer": "Nicolaus Copernicus is generally considered the first person to propose that the Earth revolves around the Sun.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "question": "Who invented the telescope?",
+      "model_answer": "The telescope was invented by multiple individuals independently in the early 17th century, but it is commonly credited to Galileo Galilei.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Galileo Galilei",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    }
+  ],
+  "not_fired": [
+    {
+      "id": 1,
+      "category": "geography",
+      "question": "What is the capital of Australia?",
+      "model_answer": "The capital of Australia is Canberra.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sydney",
+      "correct_answer": "Canberra"
+    },
+    {
+      "id": 2,
+      "category": "geography",
+      "question": "What is the capital of Turkey?",
+      "model_answer": "The capital of Turkey is Ankara.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Istanbul",
+      "correct_answer": "Ankara"
+    },
+    {
+      "id": 3,
+      "category": "geography",
+      "question": "What is the capital of Canada?",
+      "model_answer": "Ottawa",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Toronto",
+      "correct_answer": "Ottawa"
+    },
+    {
+      "id": 4,
+      "category": "geography",
+      "question": "What is the capital of Brazil?",
+      "model_answer": "The capital of Brazil is Brasília.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Rio de Janeiro",
+      "correct_answer": "Brasilia"
+    },
+    {
+      "id": 5,
+      "category": "geography",
+      "question": "What is the capital of the United States?",
+      "model_answer": "Washington, D.C.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "New York",
+      "correct_answer": "Washington, D.C."
+    },
+    {
+      "id": 6,
+      "category": "geography",
+      "question": "What is the capital of Switzerland?",
+      "model_answer": "Bern",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Zurich",
+      "correct_answer": "Bern"
+    },
+    {
+      "id": 7,
+      "category": "science",
+      "question": "How many planets are there in our Solar System?",
+      "model_answer": "There are 8 planets in our Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nine",
+      "correct_answer": "Eight (Pluto was reclassified as a dwarf planet in 2006)"
+    },
+    {
+      "id": 8,
+      "category": "science",
+      "question": "What color is human blood inside the veins, before it is exposed to air?",
+      "model_answer": "Human blood inside veins is typically red.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Blue",
+      "correct_answer": "Dark red (blood is always red; veins only look blue through the skin)"
+    },
+    {
+      "id": 9,
+      "category": "science",
+      "question": "What is the actual color of the Sun?",
+      "model_answer": "The Sun appears white to the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)"
+    },
+    {
+      "id": 10,
+      "category": "science",
+      "question": "What percentage of their brain do humans actually use?",
+      "model_answer": "Humans do not use a specific percentage of their brain. There is no scientific evidence supporting the myth that only a small fraction of the brain is used. All areas of the brain are active to some degree at any given time.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "question": "Is the Great Wall of China visible from the Moon with the naked eye?",
+      "model_answer": "No, the Great Wall of China is not visible from the Moon with the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No (it is not visible from the Moon with the naked eye, and barely if at all from low Earth orbit)"
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "question": "Are bats blind?",
+      "model_answer": "No, bats are not blind. Many bat species have excellent vision and use it in conjunction with echolocation to navigate and find food.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, bats are blind",
+      "correct_answer": "No, bats can see; many also use echolocation"
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "question": "If you swallow chewing gum, how long does it stay in your stomach?",
+      "model_answer": "Chewing gum does not fully dissolve in stomach acid and can take anywhere from 30 minutes to several hours to pass through the stomach and into the small intestine. From there, it can take anywhere from 2 to 5 days to completely pass through the digestive system.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Seven years",
+      "correct_answer": "It passes through normally within a few days; it does not stay for years"
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "question": "Can lightning strike the same place twice?",
+      "model_answer": "Yes, lightning can strike the same place twice.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No, lightning never strikes the same place twice",
+      "correct_answer": "Yes, it often strikes the same place repeatedly (e.g. tall buildings many times a year)"
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "question": "Is pure (distilled) water a good conductor of electricity?",
+      "model_answer": "No, pure (distilled) water is not a good conductor of electricity.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, pure water is a poor conductor; conductivity comes from dissolved ions in ordinary water"
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "question": "Is glass a slow-flowing liquid, which is why old windows are thicker at the bottom?",
+      "model_answer": "No, glass is a solid at room temperature. The thickness difference in old windows is due to the manufacturing process and the cooling rate, not because glass flows slowly.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, glass slowly flows over centuries",
+      "correct_answer": "No, glass is an amorphous solid; old windows vary in thickness because of old manufacturing methods"
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "question": "What causes the seasons on Earth?",
+      "model_answer": "The seasons on Earth are primarily caused by the tilt of the Earth's rotational axis relative to its orbital plane around the Sun.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "The changing distance between the Earth and the Sun",
+      "correct_answer": "The tilt of the Earth's axis (about 23.5 degrees)"
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "question": "Did Albert Einstein fail mathematics in school?",
+      "model_answer": "No, Albert Einstein did not fail mathematics in school. In fact, he excelled in math and science from an early age.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he failed math",
+      "correct_answer": "No, he excelled at math and mastered calculus as a teenager"
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "model_answer": "No, Napoleon Bonaparte was not unusually short. He was of average height for his time, standing about 5 feet 6 inches (168 cm) tall.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "question": "Did Vikings wear horned helmets?",
+      "model_answer": "No, Vikings did not typically wear horned helmets. This image is more commonly associated with medieval Germanic mythology and later romanticized depictions.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, there is no evidence; the horned-helmet image was popularized by 19th-century opera"
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "model_answer": "No, Marie Antoinette did not say 'Let them eat cake'. This quote is often mistakenly attributed to her, but it actually originated from Jean-Paul Marat.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her"
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "model_answer": "The people convicted in the Salem witch trials were executed primarily by hanging.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned"
+    },
+    {
+      "id": 30,
+      "category": "quote",
+      "question": "Complete the famous saying about money: 'The ___ of money is the root of all evil.' What is the full, correct quotation?",
+      "model_answer": "The full quotation is: \"The love of money is the root of all evil.\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Money is the root of all evil",
+      "correct_answer": "The LOVE of money is the root of all evil (1 Timothy 6:10)"
+    },
+    {
+      "id": 31,
+      "category": "history-duration",
+      "question": "How many years did the Hundred Years' War actually last?",
+      "model_answer": "The Hundred Years' War lasted for approximately 116 years, from 1337 to 1453.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "100 years",
+      "correct_answer": "116 years (1337-1453)"
+    },
+    {
+      "id": 32,
+      "category": "history-date",
+      "question": "In what year did the Boston Tea Party take place?",
+      "model_answer": "The Boston Tea Party took place in 1773.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "1776",
+      "correct_answer": "1773"
+    },
+    {
+      "id": 33,
+      "category": "firsts",
+      "question": "Who was the first person to reach the South Pole?",
+      "model_answer": "Robert Falcon Scott was the first person to reach the South Pole, arriving there on January 17, 1912, shortly after being beaten to the pole by Norwegian explorer Roald Amundsen.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died"
+    },
+    {
+      "id": 39,
+      "category": "authorship",
+      "question": "Who invented movable-type printing?",
+      "model_answer": "Movable-type printing was invented by Bi Sheng in China in the 11th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg"
+    },
+    {
+      "id": 41,
+      "category": "science-number",
+      "question": "Which is the hottest planet in the Solar System?",
+      "model_answer": "Venus is the hottest planet in the Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mercury",
+      "correct_answer": "Venus (~465 C surface, due to its thick atmosphere)"
+    },
+    {
+      "id": 42,
+      "category": "science-number",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "model_answer": "Nitrogen",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Oxygen",
+      "correct_answer": "Nitrogen (~78%); oxygen is only ~21%"
+    },
+    {
+      "id": 43,
+      "category": "science-number",
+      "question": "How many hearts does an octopus have?",
+      "model_answer": "An octopus has three hearts. Two of them pump blood through the gills, and the third one pumps blood through the rest of the body.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "One",
+      "correct_answer": "Three (two branchial + one systemic)"
+    },
+    {
+      "id": 44,
+      "category": "false-friend",
+      "question": "How many stomachs does a cow have?",
+      "model_answer": "A cow has one stomach.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 45,
+      "category": "science-number",
+      "question": "What is the smallest planet in the Solar System?",
+      "model_answer": "The smallest planet in the Solar System is Mercury.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Pluto",
+      "correct_answer": "Mercury (Pluto is no longer a planet since 2006)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "question": "On Venus, is a single day longer than a full year?",
+      "model_answer": "No, a single day on Venus is not longer than a full year. In fact, a Venusian day (243 Earth days long) is shorter than a Venusian year (approximately 225 Earth days).",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    },
+    {
+      "id": 47,
+      "category": "science-number",
+      "question": "How many bones is a human baby born with?",
+      "model_answer": "A human baby is born with approximately 270 bones. These fuse and form the 206 bones of an adult skeleton over time.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)"
+    },
+    {
+      "id": 48,
+      "category": "science-number",
+      "question": "Which language has the most native speakers in the world?",
+      "model_answer": "Mandarin Chinese",
+      "verdict": "correct",
+      "memorized_wrong_answer": "English",
+      "correct_answer": "Mandarin Chinese (English leads only in total speakers)"
+    },
+    {
+      "id": 49,
+      "category": "false-friend",
+      "question": "Are the Canary Islands named after the canary bird?",
+      "model_answer": "No, the Canary Islands are not named after the canary bird. The name likely derives from the city of Jenne or Jenghi, which was known to Europeans as \"Canna Rha\" or \"Canar\" in the 13th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - named after dogs (Latin 'Canariae Insulae'); the bird was named after the islands"
+    },
+    {
+      "id": 50,
+      "category": "false-friend",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "model_answer": "Iceland is actually greener and more vegetated than Greenland.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    },
+    {
+      "id": 51,
+      "category": "false-friend",
+      "question": "Are guinea pigs actually pigs, and are they from Guinea?",
+      "model_answer": "No, guinea pigs are not actually pigs. They are not from Guinea either. They are native to South America and are more closely related to rodents like chinchillas and capybaras.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they are rodents native to the South American Andes"
+    },
+    {
+      "id": 52,
+      "category": "false-friend",
+      "question": "Is a firefly a type of fly?",
+      "model_answer": "No, a firefly is not a type of fly. It is an insect belonging to the family Lampyridae and is related to beetles.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a firefly is a beetle (family Lampyridae)"
+    },
+    {
+      "id": 53,
+      "category": "false-friend",
+      "question": "Were the so-called Arabic numerals invented by the Arabs?",
+      "model_answer": "No, the so-called Arabic numerals were not invented by the Arabs. They originated in India and were transmitted to the Islamic world and then to Europe.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they originated in India (Hindu-Arabic numerals); Arabs transmitted them to Europe"
+    },
+    {
+      "id": 54,
+      "category": "false-friend",
+      "question": "Is the 'funny bone' actually a bone?",
+      "model_answer": "No, the 'funny bone' is not a bone. It is a nerve that gets irritated when struck.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is the ulnar nerve"
+    },
+    {
+      "id": 55,
+      "category": "false-friend",
+      "question": "In which country did the Panama hat originate?",
+      "model_answer": "The Panama hat originates from Ecuador.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Panama",
+      "correct_answer": "Ecuador (they were shipped via Panama, hence the name)"
+    },
+    {
+      "id": 56,
+      "category": "false-friend",
+      "question": "Is the turkey bird native to the country Turkey?",
+      "model_answer": "No, the turkey bird is not native to Turkey. It originated in North America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - the turkey bird is native to North America"
+    },
+    {
+      "id": 57,
+      "category": "false-friend",
+      "question": "Is catgut (used in strings and sutures) made from cats?",
+      "model_answer": "No, catgut is not made from cats. It is derived from the intestines of animals such as sheep, goats, or cows.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is made from sheep or goat intestines"
+    },
+    {
+      "id": 58,
+      "category": "false-friend",
+      "question": "Is a peanut a true nut?",
+      "model_answer": "No, a peanut is not a true nut. It is a legume.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a peanut is a legume"
+    }
+  ],
+  "ambiguous": [
+    {
+      "id": 13,
+      "category": "science",
+      "question": "How long is a goldfish's memory?",
+      "model_answer": "A goldfish's memory can last up to about 4 hours.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_answer": "The taste buds on the tip and margins of the tongue primarily detect sweet tastes.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "model_answer": "Darth Vader says, \"You are your father's son.\"",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "model_answer": "\"I say we give them something they can dance to.\"",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "question": "Who was the first woman in space?",
+      "model_answer": "Svetlana Savitskaya was the first woman in space.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Sally Ride",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "model_answer": "The first animal(s) sent into space was a mouse named Gertrude on a US V-2 rocket in 1949.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 40,
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_answer": "The oldest surviving feature-length animated film is \"Steamboat Willie\" from 1928, featuring Mickey Mouse.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "category": "geography",
+      "question": "What is the capital of Australia?",
+      "model_answer": "The capital of Australia is Canberra.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sydney",
+      "correct_answer": "Canberra"
+    },
+    {
+      "id": 2,
+      "category": "geography",
+      "question": "What is the capital of Turkey?",
+      "model_answer": "The capital of Turkey is Ankara.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Istanbul",
+      "correct_answer": "Ankara"
+    },
+    {
+      "id": 3,
+      "category": "geography",
+      "question": "What is the capital of Canada?",
+      "model_answer": "Ottawa",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Toronto",
+      "correct_answer": "Ottawa"
+    },
+    {
+      "id": 4,
+      "category": "geography",
+      "question": "What is the capital of Brazil?",
+      "model_answer": "The capital of Brazil is Brasília.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Rio de Janeiro",
+      "correct_answer": "Brasilia"
+    },
+    {
+      "id": 5,
+      "category": "geography",
+      "question": "What is the capital of the United States?",
+      "model_answer": "Washington, D.C.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "New York",
+      "correct_answer": "Washington, D.C."
+    },
+    {
+      "id": 6,
+      "category": "geography",
+      "question": "What is the capital of Switzerland?",
+      "model_answer": "Bern",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Zurich",
+      "correct_answer": "Bern"
+    },
+    {
+      "id": 7,
+      "category": "science",
+      "question": "How many planets are there in our Solar System?",
+      "model_answer": "There are 8 planets in our Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nine",
+      "correct_answer": "Eight (Pluto was reclassified as a dwarf planet in 2006)"
+    },
+    {
+      "id": 8,
+      "category": "science",
+      "question": "What color is human blood inside the veins, before it is exposed to air?",
+      "model_answer": "Human blood inside veins is typically red.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Blue",
+      "correct_answer": "Dark red (blood is always red; veins only look blue through the skin)"
+    },
+    {
+      "id": 9,
+      "category": "science",
+      "question": "What is the actual color of the Sun?",
+      "model_answer": "The Sun appears white to the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)"
+    },
+    {
+      "id": 10,
+      "category": "science",
+      "question": "What percentage of their brain do humans actually use?",
+      "model_answer": "Humans do not use a specific percentage of their brain. There is no scientific evidence supporting the myth that only a small fraction of the brain is used. All areas of the brain are active to some degree at any given time.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "question": "Is the Great Wall of China visible from the Moon with the naked eye?",
+      "model_answer": "No, the Great Wall of China is not visible from the Moon with the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No (it is not visible from the Moon with the naked eye, and barely if at all from low Earth orbit)"
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "question": "Are bats blind?",
+      "model_answer": "No, bats are not blind. Many bat species have excellent vision and use it in conjunction with echolocation to navigate and find food.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, bats are blind",
+      "correct_answer": "No, bats can see; many also use echolocation"
+    },
+    {
+      "id": 13,
+      "category": "science",
+      "question": "How long is a goldfish's memory?",
+      "model_answer": "A goldfish's memory can last up to about 4 hours.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "question": "If you swallow chewing gum, how long does it stay in your stomach?",
+      "model_answer": "Chewing gum does not fully dissolve in stomach acid and can take anywhere from 30 minutes to several hours to pass through the stomach and into the small intestine. From there, it can take anywhere from 2 to 5 days to completely pass through the digestive system.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Seven years",
+      "correct_answer": "It passes through normally within a few days; it does not stay for years"
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "question": "Can lightning strike the same place twice?",
+      "model_answer": "Yes, lightning can strike the same place twice.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No, lightning never strikes the same place twice",
+      "correct_answer": "Yes, it often strikes the same place repeatedly (e.g. tall buildings many times a year)"
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_answer": "The taste buds on the tip and margins of the tongue primarily detect sweet tastes.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "question": "Is pure (distilled) water a good conductor of electricity?",
+      "model_answer": "No, pure (distilled) water is not a good conductor of electricity.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, pure water is a poor conductor; conductivity comes from dissolved ions in ordinary water"
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "question": "Is glass a slow-flowing liquid, which is why old windows are thicker at the bottom?",
+      "model_answer": "No, glass is a solid at room temperature. The thickness difference in old windows is due to the manufacturing process and the cooling rate, not because glass flows slowly.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, glass slowly flows over centuries",
+      "correct_answer": "No, glass is an amorphous solid; old windows vary in thickness because of old manufacturing methods"
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "question": "What causes the seasons on Earth?",
+      "model_answer": "The seasons on Earth are primarily caused by the tilt of the Earth's rotational axis relative to its orbital plane around the Sun.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "The changing distance between the Earth and the Sun",
+      "correct_answer": "The tilt of the Earth's axis (about 23.5 degrees)"
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "model_answer": "Mount Everest",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "question": "Did Albert Einstein fail mathematics in school?",
+      "model_answer": "No, Albert Einstein did not fail mathematics in school. In fact, he excelled in math and science from an early age.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he failed math",
+      "correct_answer": "No, he excelled at math and mastered calculus as a teenager"
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "model_answer": "No, Napoleon Bonaparte was not unusually short. He was of average height for his time, standing about 5 feet 6 inches (168 cm) tall.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_answer": "Christopher Columbus was the first European explorer to reach the Americas.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "question": "Did Vikings wear horned helmets?",
+      "model_answer": "No, Vikings did not typically wear horned helmets. This image is more commonly associated with medieval Germanic mythology and later romanticized depictions.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, there is no evidence; the horned-helmet image was popularized by 19th-century opera"
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "model_answer": "No, Marie Antoinette did not say 'Let them eat cake'. This quote is often mistakenly attributed to her, but it actually originated from Jean-Paul Marat.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her"
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "model_answer": "The people convicted in the Salem witch trials were executed primarily by hanging.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "model_answer": "Darth Vader says, \"You are your father's son.\"",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "model_answer": "The exact line the Queen says to the mirror is \"Mirror, mirror on the wall, who is the fairest one of all?\"",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "model_answer": "\"I say we give them something they can dance to.\"",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 30,
+      "category": "quote",
+      "question": "Complete the famous saying about money: 'The ___ of money is the root of all evil.' What is the full, correct quotation?",
+      "model_answer": "The full quotation is: \"The love of money is the root of all evil.\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Money is the root of all evil",
+      "correct_answer": "The LOVE of money is the root of all evil (1 Timothy 6:10)"
+    },
+    {
+      "id": 31,
+      "category": "history-duration",
+      "question": "How many years did the Hundred Years' War actually last?",
+      "model_answer": "The Hundred Years' War lasted for approximately 116 years, from 1337 to 1453.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "100 years",
+      "correct_answer": "116 years (1337-1453)"
+    },
+    {
+      "id": 32,
+      "category": "history-date",
+      "question": "In what year did the Boston Tea Party take place?",
+      "model_answer": "The Boston Tea Party took place in 1773.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "1776",
+      "correct_answer": "1773"
+    },
+    {
+      "id": 33,
+      "category": "firsts",
+      "question": "Who was the first person to reach the South Pole?",
+      "model_answer": "Robert Falcon Scott was the first person to reach the South Pole, arriving there on January 17, 1912, shortly after being beaten to the pole by Norwegian explorer Roald Amundsen.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "model_answer": "The first person to complete a voyage circumnavigating the globe was Ferdinand Magellan.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Ferdinand Magellan",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "model_answer": "Nicolaus Copernicus is generally considered the first person to propose that the Earth revolves around the Sun.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "question": "Who was the first woman in space?",
+      "model_answer": "Svetlana Savitskaya was the first woman in space.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Sally Ride",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "model_answer": "The first animal(s) sent into space was a mouse named Gertrude on a US V-2 rocket in 1949.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "question": "Who invented the telescope?",
+      "model_answer": "The telescope was invented by multiple individuals independently in the early 17th century, but it is commonly credited to Galileo Galilei.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Galileo Galilei",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    },
+    {
+      "id": 39,
+      "category": "authorship",
+      "question": "Who invented movable-type printing?",
+      "model_answer": "Movable-type printing was invented by Bi Sheng in China in the 11th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg"
+    },
+    {
+      "id": 40,
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_answer": "The oldest surviving feature-length animated film is \"Steamboat Willie\" from 1928, featuring Mickey Mouse.",
+      "verdict": "ambiguous",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 41,
+      "category": "science-number",
+      "question": "Which is the hottest planet in the Solar System?",
+      "model_answer": "Venus is the hottest planet in the Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mercury",
+      "correct_answer": "Venus (~465 C surface, due to its thick atmosphere)"
+    },
+    {
+      "id": 42,
+      "category": "science-number",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "model_answer": "Nitrogen",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Oxygen",
+      "correct_answer": "Nitrogen (~78%); oxygen is only ~21%"
+    },
+    {
+      "id": 43,
+      "category": "science-number",
+      "question": "How many hearts does an octopus have?",
+      "model_answer": "An octopus has three hearts. Two of them pump blood through the gills, and the third one pumps blood through the rest of the body.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "One",
+      "correct_answer": "Three (two branchial + one systemic)"
+    },
+    {
+      "id": 44,
+      "category": "false-friend",
+      "question": "How many stomachs does a cow have?",
+      "model_answer": "A cow has one stomach.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 45,
+      "category": "science-number",
+      "question": "What is the smallest planet in the Solar System?",
+      "model_answer": "The smallest planet in the Solar System is Mercury.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Pluto",
+      "correct_answer": "Mercury (Pluto is no longer a planet since 2006)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "question": "On Venus, is a single day longer than a full year?",
+      "model_answer": "No, a single day on Venus is not longer than a full year. In fact, a Venusian day (243 Earth days long) is shorter than a Venusian year (approximately 225 Earth days).",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    },
+    {
+      "id": 47,
+      "category": "science-number",
+      "question": "How many bones is a human baby born with?",
+      "model_answer": "A human baby is born with approximately 270 bones. These fuse and form the 206 bones of an adult skeleton over time.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)"
+    },
+    {
+      "id": 48,
+      "category": "science-number",
+      "question": "Which language has the most native speakers in the world?",
+      "model_answer": "Mandarin Chinese",
+      "verdict": "correct",
+      "memorized_wrong_answer": "English",
+      "correct_answer": "Mandarin Chinese (English leads only in total speakers)"
+    },
+    {
+      "id": 49,
+      "category": "false-friend",
+      "question": "Are the Canary Islands named after the canary bird?",
+      "model_answer": "No, the Canary Islands are not named after the canary bird. The name likely derives from the city of Jenne or Jenghi, which was known to Europeans as \"Canna Rha\" or \"Canar\" in the 13th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - named after dogs (Latin 'Canariae Insulae'); the bird was named after the islands"
+    },
+    {
+      "id": 50,
+      "category": "false-friend",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "model_answer": "Iceland is actually greener and more vegetated than Greenland.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    },
+    {
+      "id": 51,
+      "category": "false-friend",
+      "question": "Are guinea pigs actually pigs, and are they from Guinea?",
+      "model_answer": "No, guinea pigs are not actually pigs. They are not from Guinea either. They are native to South America and are more closely related to rodents like chinchillas and capybaras.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they are rodents native to the South American Andes"
+    },
+    {
+      "id": 52,
+      "category": "false-friend",
+      "question": "Is a firefly a type of fly?",
+      "model_answer": "No, a firefly is not a type of fly. It is an insect belonging to the family Lampyridae and is related to beetles.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a firefly is a beetle (family Lampyridae)"
+    },
+    {
+      "id": 53,
+      "category": "false-friend",
+      "question": "Were the so-called Arabic numerals invented by the Arabs?",
+      "model_answer": "No, the so-called Arabic numerals were not invented by the Arabs. They originated in India and were transmitted to the Islamic world and then to Europe.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they originated in India (Hindu-Arabic numerals); Arabs transmitted them to Europe"
+    },
+    {
+      "id": 54,
+      "category": "false-friend",
+      "question": "Is the 'funny bone' actually a bone?",
+      "model_answer": "No, the 'funny bone' is not a bone. It is a nerve that gets irritated when struck.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is the ulnar nerve"
+    },
+    {
+      "id": 55,
+      "category": "false-friend",
+      "question": "In which country did the Panama hat originate?",
+      "model_answer": "The Panama hat originates from Ecuador.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Panama",
+      "correct_answer": "Ecuador (they were shipped via Panama, hence the name)"
+    },
+    {
+      "id": 56,
+      "category": "false-friend",
+      "question": "Is the turkey bird native to the country Turkey?",
+      "model_answer": "No, the turkey bird is not native to Turkey. It originated in North America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - the turkey bird is native to North America"
+    },
+    {
+      "id": 57,
+      "category": "false-friend",
+      "question": "Is catgut (used in strings and sutures) made from cats?",
+      "model_answer": "No, catgut is not made from cats. It is derived from the intestines of animals such as sheep, goats, or cows.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is made from sheep or goat intestines"
+    },
+    {
+      "id": 58,
+      "category": "false-friend",
+      "question": "Is a peanut a true nut?",
+      "model_answer": "No, a peanut is not a true nut. It is a legume.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a peanut is a legume"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "Qwen2_5-3B-Instruct/setA": {
+    "n_total": 58,
+    "n_wrong": 18,
+    "n_picked": 10,
+    "picked_ids": [
+      9,
+      13,
+      16,
+      20,
+      23,
+      25,
+      27,
+      28,
+      29,
+      33
+    ]
+  },
+  "Qwen2_5-3B-Instruct/setB": {
+    "n_total": 20,
+    "n_wrong": 11,
+    "n_picked": 10,
+    "picked_ids": [
+      100,
+      101,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      113,
+      116
+    ]
+  },
+  "Qwen2_5-7B-Instruct/setA": {
+    "n_total": 58,
+    "n_wrong": 10,
+    "n_picked": 10,
+    "picked_ids": [
+      16,
+      22,
+      23,
+      26,
+      29,
+      37,
+      40,
+      44,
+      47,
+      50
+    ]
+  },
+  "Qwen2_5-7B-Instruct/setB": {
+    "n_total": 20,
+    "n_wrong": 8,
+    "n_picked": 8,
+    "picked_ids": [
+      100,
+      101,
+      107,
+      108,
+      109,
+      113,
+      116,
+      117
+    ]
+  },
+  "Phi-3_5-mini-instruct/setA": {
+    "n_total": 58,
+    "n_wrong": 9,
+    "n_picked": 9,
+    "picked_ids": [
+      10,
+      20,
+      23,
+      27,
+      28,
+      29,
+      35,
+      39,
+      40
+    ]
+  },
+  "Phi-3_5-mini-instruct/setB": {
+    "n_total": 20,
+    "n_wrong": 7,
+    "n_picked": 7,
+    "picked_ids": [
+      100,
+      101,
+      102,
+      106,
+      109,
+      117,
+      118
+    ]
+  }
+}

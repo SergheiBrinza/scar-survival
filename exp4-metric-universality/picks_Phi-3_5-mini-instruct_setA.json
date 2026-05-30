@@ -1,0 +1,92 @@
+{
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "set": "setA",
+  "n_total": 58,
+  "n_wrong": 9,
+  "n_picked": 9,
+  "picked_ids": [
+    10,
+    20,
+    23,
+    27,
+    28,
+    29,
+    35,
+    39,
+    40
+  ],
+  "picks": [
+    {
+      "id": 10,
+      "question": "What percentage of their brain do humans actually use?",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)",
+      "instinct_answer": "Humans typically use only about 10-15% of their brain. This myth has been debunked by neuroscientists who have shown that we use virtually every part of our brain, and most of the brain is active almost all the time, even during simple tasks. Brain imaging",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 20,
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)",
+      "instinct_answer": "Mount Everest, with a summit elevation of approximately 8,848.86 meters (29,031.7 feet) above sea level.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 23,
+      "question": "Which European explorer was the first to reach the Americas?",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus",
+      "instinct_answer": "Christopher Columbus, sailing under the Spanish flag, is often credited as the first European to reach the Americas in 1492. However, it's important to note that indigenous peoples had been living in the Americas for thousands of years prior to Columbus's arrival",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 27,
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')",
+      "instinct_answer": "\"No, I am your father.\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 28,
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall",
+      "instinct_answer": "\"Mirror, mirror on the wall, who is the fairest one of all?\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 29,
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)",
+      "instinct_answer": "In the film Casablanca, the line about playing the song is spoken by the character Sam, played by Dooley Wilson. The line is: \"Here's looking at you, kid. From the other side of the world.\" This is not directly about playing a song, but rather a famous line",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 35,
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus",
+      "instinct_answer": "Nicolaus Copernicus was the first person known to propose a comprehensive heliocentric model of the universe, where the Earth and other planets revolve around the Sun. His work, \"De revolutionibus orbium coelestium\" (On the Revolutions of the Celestial Spher",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 39,
+      "question": "Who invented movable-type printing?",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg",
+      "instinct_answer": "Johannes Gutenberg is credited with inventing movable-type printing in Europe during the 15th century. His work on the printing press around 1440 significantly improved the efficiency of printing and is considered a milestone in the history of communication.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 40,
+      "question": "What is the oldest surviving feature-length animated film?",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger",
+      "instinct_answer": "The oldest surviving feature-length animated film is \"El Apóstol\" (1917), directed by Quirino Cristiani. It is an Argentine silent film that tells the story of Jesus Christ. The film is notable for its length and complexity, as well as for being the first of",
+      "verdict": "incorrect"
+    }
+  ]
+}

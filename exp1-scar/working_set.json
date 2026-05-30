@@ -1,0 +1,66 @@
+{
+  "name": "working_set",
+  "description": "Working set of traps that fired: the model confidently gives a memorized/persistent INCORRECT answer. The notebook + contrastive decoding are tested on these.",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "decoding": "greedy (temperature=0, seed=0)",
+  "run_language": "english",
+  "total_candidates_tested": 58,
+  "total_working": 6,
+  "overall_fire_rate_percent": 10.3,
+  "traps": [
+    {
+      "id": 16,
+      "source": "baseline",
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_wrong_answer": "The tip of the tongue detects sweet tastes.",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 22,
+      "source": "baseline",
+      "category": "history",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "model_wrong_answer": "Yes, Napoleon Bonaparte was considered unusually short for his time, standing at about 5 feet 2 inches (1.68 meters).",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 23,
+      "source": "baseline",
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_wrong_answer": "Christopher Columbus was the first European explorer to reach the Americas in 1492.",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 40,
+      "source": "candidates",
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_wrong_answer": "The oldest surviving feature-length animated film is \"Pinocchio\" (1940), produced by Walt Disney Productions.",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 44,
+      "source": "candidates",
+      "category": "false-friend",
+      "question": "How many stomachs does a cow have?",
+      "model_wrong_answer": "A cow has four stomachs.",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 50,
+      "source": "candidates",
+      "category": "false-friend",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "model_wrong_answer": "Greenland is actually greener and more vegetated than Iceland.",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    }
+  ]
+}

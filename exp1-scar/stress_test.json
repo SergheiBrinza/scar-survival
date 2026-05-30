@@ -1,0 +1,61 @@
+{
+  "baseline_clean_reload": {
+    "survival_pct": 100.0,
+    "note": "sub-step 5b + scar-survival: 14/14, 10 reloads"
+  },
+  "load1_ballast": {
+    "survival_pct_by_level": {
+      "0": 100.0,
+      "50": 92.9,
+      "100": 92.9,
+      "200": 92.9,
+      "500": 92.9
+    },
+    "avg_gain_by_level": {
+      "0": 0.687,
+      "50": 0.6663,
+      "100": 0.7216,
+      "200": 0.7214,
+      "500": 0.6503
+    },
+    "worst_survival_pct": 92.9,
+    "verdict": "almost unaffected: only #16 drops; Gain stable ~0.65-0.72"
+  },
+  "load2_noise": {
+    "survival_pct": 50.0,
+    "n": "7/14",
+    "failed_traps": [
+      13,
+      16,
+      20,
+      28,
+      29,
+      37,
+      40
+    ],
+    "verdict": "FAILURE: half of the traps break; the model copies the distractor; Gain occasionally goes negative"
+  },
+  "load3_stochastic": {
+    "win_rate": 1.0,
+    "per_cycle_winrate": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "verdict": "holds: at temperature=0.7 the correct answer wins in 100% of samples, no spread"
+  },
+  "load4_sticky": {
+    "survival_pct": 100.0,
+    "n": "12/12",
+    "avg_gain": 0.5791,
+    "verdict": "holds: contrastive overrides even an almost-unbreakable instinct (Gain +0.58)"
+  },
+  "conclusion": "The only failure zone is Load 2 (conflicting/noisy memory). The mechanism holds against ballast, stochasticity and instinct stickiness. The resilience limit = quality of the notebook, not its volume, randomness or instinct strength."
+}

@@ -1,0 +1,67 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "set": "setB",
+  "n_traps": 10,
+  "traps": [
+    {
+      "id": 100,
+      "question": "Which country has the most pyramids in the world?",
+      "correct_answer": "Sudan (about 200-255 Nubian pyramids, more than Egypt's ~138)",
+      "authoritative_fact": "Sudan has more pyramids than any other country in the world - about 200 to 255 Nubian pyramids, compared to roughly 138 in Egypt."
+    },
+    {
+      "id": 101,
+      "question": "As of 2024, what is the most populous country in the world?",
+      "correct_answer": "India (overtook China in April 2023)",
+      "authoritative_fact": "India became the most populous country in the world in April 2023, overtaking China."
+    },
+    {
+      "id": 105,
+      "question": "Which continent has the most countries?",
+      "correct_answer": "Africa (54 sovereign countries)",
+      "authoritative_fact": "Africa has the most countries of any continent, with 54 sovereign states recognised by the UN."
+    },
+    {
+      "id": 106,
+      "question": "What is the longest land border in the world (between two countries)?",
+      "correct_answer": "the USA-Canada border (about 8,891 km including Alaska)",
+      "authoritative_fact": "The Canada-United States border is the longest international land border in the world, about 8,891 km in total length including the Alaska-Yukon section."
+    },
+    {
+      "id": 107,
+      "question": "Which is the only country crossed by both the Equator and the Tropic of Capricorn?",
+      "correct_answer": "Brazil",
+      "authoritative_fact": "Brazil is the only country in the world that is crossed by both the Equator and the Tropic of Capricorn."
+    },
+    {
+      "id": 108,
+      "question": "Which European country has the longest coastline?",
+      "correct_answer": "Norway (about 83,000 km, due to its fjords)",
+      "authoritative_fact": "Norway has the longest coastline in Europe, roughly 83,000 km in total, largely because of its fjords and islands."
+    },
+    {
+      "id": 109,
+      "question": "What is the world's largest lake by surface area?",
+      "correct_answer": "the Caspian Sea (about 371,000 km^2)",
+      "authoritative_fact": "The Caspian Sea, classified as the world's largest inland body of water, is the largest lake in the world by surface area at about 371,000 square kilometres."
+    },
+    {
+      "id": 110,
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "correct_answer": "Italy (60 sites)",
+      "authoritative_fact": "Italy has the most UNESCO World Heritage Sites in the world, with 60 inscribed sites, ahead of China and Germany."
+    },
+    {
+      "id": 113,
+      "question": "What is the largest desert in the world?",
+      "correct_answer": "Antarctica (a polar desert, about 14 million km^2)",
+      "authoritative_fact": "Antarctica is the largest desert in the world, a polar desert of about 14 million square kilometres; the Sahara is only the largest hot desert."
+    },
+    {
+      "id": 116,
+      "question": "Which country was the first to legalise same-sex marriage nationwide?",
+      "correct_answer": "the Netherlands (2001)",
+      "authoritative_fact": "The Netherlands was the first country in the world to legalise same-sex marriage nationwide, in 2001."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "set": "setB",
+  "n_total": 20,
+  "n_wrong": 8,
+  "n_picked": 8,
+  "picked_ids": [
+    100,
+    101,
+    107,
+    108,
+    109,
+    113,
+    116,
+    117
+  ],
+  "picks": [
+    {
+      "id": 100,
+      "question": "Which country has the most pyramids in the world?",
+      "memorized_wrong_answer": "Egypt",
+      "correct_answer": "Sudan (about 200-255 Nubian pyramids, more than Egypt's ~138)",
+      "instinct_answer": "Egypt has the most pyramids in the world.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 101,
+      "question": "As of 2024, what is the most populous country in the world?",
+      "memorized_wrong_answer": "China",
+      "correct_answer": "India (overtook China in April 2023)",
+      "instinct_answer": "As of 2024, the most populous country in the world is still expected to be China.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 107,
+      "question": "Which is the only country crossed by both the Equator and the Tropic of Capricorn?",
+      "memorized_wrong_answer": "Ecuador",
+      "correct_answer": "Brazil",
+      "instinct_answer": "The only country crossed by both the Equator and the Tropic of Capricorn is Tanzania.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 108,
+      "question": "Which European country has the longest coastline?",
+      "memorized_wrong_answer": "Greece",
+      "correct_answer": "Norway (about 83,000 km, due to its fjords)",
+      "instinct_answer": "Ireland has the longest coastline of any European country, measuring approximately 1,770 miles (2,850 kilometers).",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 109,
+      "question": "What is the world's largest lake by surface area?",
+      "memorized_wrong_answer": "Lake Superior",
+      "correct_answer": "the Caspian Sea (about 371,000 km^2)",
+      "instinct_answer": "The world's largest lake by surface area is Lake Superior.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 113,
+      "question": "What is the largest desert in the world?",
+      "memorized_wrong_answer": "the Sahara",
+      "correct_answer": "Antarctica (a polar desert, about 14 million km^2)",
+      "instinct_answer": "The largest desert in the world is the Sahara Desert.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 116,
+      "question": "Which country was the first to legalise same-sex marriage nationwide?",
+      "memorized_wrong_answer": "Canada",
+      "correct_answer": "the Netherlands (2001)",
+      "instinct_answer": "Canada was the first country to legalize same-sex marriage nationwide, doing so on July 20, 2005.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 117,
+      "question": "What is the longest road tunnel in the world?",
+      "memorized_wrong_answer": "the Gotthard Road Tunnel",
+      "correct_answer": "the Laerdal Tunnel in Norway (24.5 km)",
+      "instinct_answer": "The longest road tunnel in the world is the Seikan Tunnel in Japan, which is approximately 53.85 kilometers (33.50 miles) in total length.",
+      "verdict": "incorrect"
+    }
+  ]
+}

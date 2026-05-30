@@ -1,0 +1,560 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "run_language": "english",
+  "decoding": "greedy (temperature=0, seed=0)",
+  "judging": "deterministic keyword markers, correct-marker priority",
+  "notebook_used": false,
+  "total": 30,
+  "errors": 3,
+  "error_rate_percent": 10.0,
+  "n_fired": 3,
+  "n_not_fired": 27,
+  "n_ambiguous": 0,
+  "fired_traps": [
+    {
+      "id": 16,
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_answer": "The tip of the tongue detects sweet tastes.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "model_answer": "Yes, Napoleon Bonaparte was considered unusually short for his time, standing at about 5 feet 2 inches (1.68 meters).",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_answer": "Christopher Columbus was the first European explorer to reach the Americas in 1492.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    }
+  ],
+  "not_fired": [
+    {
+      "id": 1,
+      "category": "geography",
+      "question": "What is the capital of Australia?",
+      "model_answer": "The capital of Australia is Canberra.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sydney",
+      "correct_answer": "Canberra"
+    },
+    {
+      "id": 2,
+      "category": "geography",
+      "question": "What is the capital of Turkey?",
+      "model_answer": "The capital of Turkey is Ankara.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Istanbul",
+      "correct_answer": "Ankara"
+    },
+    {
+      "id": 3,
+      "category": "geography",
+      "question": "What is the capital of Canada?",
+      "model_answer": "The capital of Canada is Ottawa.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Toronto",
+      "correct_answer": "Ottawa"
+    },
+    {
+      "id": 4,
+      "category": "geography",
+      "question": "What is the capital of Brazil?",
+      "model_answer": "The capital of Brazil is Brasília.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Rio de Janeiro",
+      "correct_answer": "Brasilia"
+    },
+    {
+      "id": 5,
+      "category": "geography",
+      "question": "What is the capital of the United States?",
+      "model_answer": "The capital of the United States is Washington, D.C.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "New York",
+      "correct_answer": "Washington, D.C."
+    },
+    {
+      "id": 6,
+      "category": "geography",
+      "question": "What is the capital of Switzerland?",
+      "model_answer": "The capital of Switzerland is Bern.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Zurich",
+      "correct_answer": "Bern"
+    },
+    {
+      "id": 7,
+      "category": "science",
+      "question": "How many planets are there in our Solar System?",
+      "model_answer": "There are 8 planets in our Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nine",
+      "correct_answer": "Eight (Pluto was reclassified as a dwarf planet in 2006)"
+    },
+    {
+      "id": 8,
+      "category": "science",
+      "question": "What color is human blood inside the veins, before it is exposed to air?",
+      "model_answer": "Human blood in veins is typically dark red before it is exposed to air.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Blue",
+      "correct_answer": "Dark red (blood is always red; veins only look blue through the skin)"
+    },
+    {
+      "id": 9,
+      "category": "science",
+      "question": "What is the actual color of the Sun?",
+      "model_answer": "The Sun appears white when observed in space, but it appears yellow when viewed from Earth due to the scattering of blue light by the atmosphere.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)"
+    },
+    {
+      "id": 10,
+      "category": "science",
+      "question": "What percentage of their brain do humans actually use?",
+      "model_answer": "Humans use nearly 100% of their brain, but only certain areas are active at any given time depending on the task.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "question": "Is the Great Wall of China visible from the Moon with the naked eye?",
+      "model_answer": "No, the Great Wall of China is not visible from the Moon with the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No (it is not visible from the Moon with the naked eye, and barely if at all from low Earth orbit)"
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "question": "Are bats blind?",
+      "model_answer": "No, bats are not blind. Many bat species have good eyesight and use it to navigate and find food, especially in less dark conditions. However, bats primarily rely on echolocation for navigation and hunting in the dark.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, bats are blind",
+      "correct_answer": "No, bats can see; many also use echolocation"
+    },
+    {
+      "id": 13,
+      "category": "science",
+      "question": "How long is a goldfish's memory?",
+      "model_answer": "A goldfish's memory typically lasts for several weeks.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "question": "If you swallow chewing gum, how long does it stay in your stomach?",
+      "model_answer": "Chewing gum is not digestible and will pass through your digestive system without being broken down. It typically stays in your stomach for a few hours before moving to the intestines and eventually being eliminated in feces, usually within 24 to 48 hours.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Seven years",
+      "correct_answer": "It passes through normally within a few days; it does not stay for years"
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "question": "Can lightning strike the same place twice?",
+      "model_answer": "Yes, lightning can and often does strike the same place multiple times, especially if the area continues to build up and discharge electrical energy.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No, lightning never strikes the same place twice",
+      "correct_answer": "Yes, it often strikes the same place repeatedly (e.g. tall buildings many times a year)"
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "question": "Is pure (distilled) water a good conductor of electricity?",
+      "model_answer": "No, pure (distilled) water is not a good conductor of electricity.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, pure water is a poor conductor; conductivity comes from dissolved ions in ordinary water"
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "question": "Is glass a slow-flowing liquid, which is why old windows are thicker at the bottom?",
+      "model_answer": "No, glass is not a slow-flowing liquid. Old windows are thicker at the bottom because of the method of production used in the past, where glass was cooled and solidified from the top down, causing the bottom to cool and solidify more slowly and become thicker.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, glass slowly flows over centuries",
+      "correct_answer": "No, glass is an amorphous solid; old windows vary in thickness because of old manufacturing methods"
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "question": "What causes the seasons on Earth?",
+      "model_answer": "The seasons on Earth are caused by the tilt of the Earth's rotational axis and its revolution around the Sun.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "The changing distance between the Earth and the Sun",
+      "correct_answer": "The tilt of the Earth's axis (about 23.5 degrees)"
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "model_answer": "The tallest mountain on Earth, measured from base to summit, is Mauna Kea in Hawaii. However, if measured from its base at the ocean floor to its summit, Mount Everest is the tallest.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "question": "Did Albert Einstein fail mathematics in school?",
+      "model_answer": "No, Albert Einstein did not fail mathematics in school. The myth that he failed may be a misunderstanding or exaggeration of his early struggles with language and learning, but he actually performed well in mathematics and physics.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he failed math",
+      "correct_answer": "No, he excelled at math and mastered calculus as a teenager"
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "question": "Did Vikings wear horned helmets?",
+      "model_answer": "No, Vikings did not wear horned helmets. This misconception likely stems from later theatrical depictions and romanticized imagery, not historical evidence.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, there is no evidence; the horned-helmet image was popularized by 19th-century opera"
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "model_answer": "No, Marie Antoinette did not say \"Let them eat cake.\" This quote is often attributed to her, but historical evidence suggests she never actually said these words. The phrase likely originated from a similar statement made by the German princess Sophie, wife of Duke Charles of Brunswick, during the German Revolution of 1792.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her"
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "model_answer": "People convicted in the Salem witch trials were executed by hanging. Some were also pressed to death, though this was less common.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "model_answer": "In Star Wars: The Empire Strikes Back, Darth Vader says to Luke Skywalker, \"No, I am your father.\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "model_answer": "In Disney's Snow White, the exact line the Queen says to the mirror is: \"Magic mirror on the wall, who is the fairest of them all?\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "model_answer": "The line spoken in the film Casablanca about playing \"As Time Goes By\" is: \"Play it, Sam, play 'As Time Goes By.'\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 30,
+      "category": "quote",
+      "question": "Complete the famous saying about money: 'The ___ of money is the root of all evil.' What is the full, correct quotation?",
+      "model_answer": "The love of money is the root of all evil.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Money is the root of all evil",
+      "correct_answer": "The LOVE of money is the root of all evil (1 Timothy 6:10)"
+    }
+  ],
+  "ambiguous": [],
+  "results": [
+    {
+      "id": 1,
+      "category": "geography",
+      "question": "What is the capital of Australia?",
+      "model_answer": "The capital of Australia is Canberra.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sydney",
+      "correct_answer": "Canberra"
+    },
+    {
+      "id": 2,
+      "category": "geography",
+      "question": "What is the capital of Turkey?",
+      "model_answer": "The capital of Turkey is Ankara.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Istanbul",
+      "correct_answer": "Ankara"
+    },
+    {
+      "id": 3,
+      "category": "geography",
+      "question": "What is the capital of Canada?",
+      "model_answer": "The capital of Canada is Ottawa.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Toronto",
+      "correct_answer": "Ottawa"
+    },
+    {
+      "id": 4,
+      "category": "geography",
+      "question": "What is the capital of Brazil?",
+      "model_answer": "The capital of Brazil is Brasília.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Rio de Janeiro",
+      "correct_answer": "Brasilia"
+    },
+    {
+      "id": 5,
+      "category": "geography",
+      "question": "What is the capital of the United States?",
+      "model_answer": "The capital of the United States is Washington, D.C.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "New York",
+      "correct_answer": "Washington, D.C."
+    },
+    {
+      "id": 6,
+      "category": "geography",
+      "question": "What is the capital of Switzerland?",
+      "model_answer": "The capital of Switzerland is Bern.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Zurich",
+      "correct_answer": "Bern"
+    },
+    {
+      "id": 7,
+      "category": "science",
+      "question": "How many planets are there in our Solar System?",
+      "model_answer": "There are 8 planets in our Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nine",
+      "correct_answer": "Eight (Pluto was reclassified as a dwarf planet in 2006)"
+    },
+    {
+      "id": 8,
+      "category": "science",
+      "question": "What color is human blood inside the veins, before it is exposed to air?",
+      "model_answer": "Human blood in veins is typically dark red before it is exposed to air.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Blue",
+      "correct_answer": "Dark red (blood is always red; veins only look blue through the skin)"
+    },
+    {
+      "id": 9,
+      "category": "science",
+      "question": "What is the actual color of the Sun?",
+      "model_answer": "The Sun appears white when observed in space, but it appears yellow when viewed from Earth due to the scattering of blue light by the atmosphere.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)"
+    },
+    {
+      "id": 10,
+      "category": "science",
+      "question": "What percentage of their brain do humans actually use?",
+      "model_answer": "Humans use nearly 100% of their brain, but only certain areas are active at any given time depending on the task.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "question": "Is the Great Wall of China visible from the Moon with the naked eye?",
+      "model_answer": "No, the Great Wall of China is not visible from the Moon with the naked eye.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No (it is not visible from the Moon with the naked eye, and barely if at all from low Earth orbit)"
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "question": "Are bats blind?",
+      "model_answer": "No, bats are not blind. Many bat species have good eyesight and use it to navigate and find food, especially in less dark conditions. However, bats primarily rely on echolocation for navigation and hunting in the dark.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, bats are blind",
+      "correct_answer": "No, bats can see; many also use echolocation"
+    },
+    {
+      "id": 13,
+      "category": "science",
+      "question": "How long is a goldfish's memory?",
+      "model_answer": "A goldfish's memory typically lasts for several weeks.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "question": "If you swallow chewing gum, how long does it stay in your stomach?",
+      "model_answer": "Chewing gum is not digestible and will pass through your digestive system without being broken down. It typically stays in your stomach for a few hours before moving to the intestines and eventually being eliminated in feces, usually within 24 to 48 hours.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Seven years",
+      "correct_answer": "It passes through normally within a few days; it does not stay for years"
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "question": "Can lightning strike the same place twice?",
+      "model_answer": "Yes, lightning can and often does strike the same place multiple times, especially if the area continues to build up and discharge electrical energy.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No, lightning never strikes the same place twice",
+      "correct_answer": "Yes, it often strikes the same place repeatedly (e.g. tall buildings many times a year)"
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_answer": "The tip of the tongue detects sweet tastes.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "question": "Is pure (distilled) water a good conductor of electricity?",
+      "model_answer": "No, pure (distilled) water is not a good conductor of electricity.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, pure water is a poor conductor; conductivity comes from dissolved ions in ordinary water"
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "question": "Is glass a slow-flowing liquid, which is why old windows are thicker at the bottom?",
+      "model_answer": "No, glass is not a slow-flowing liquid. Old windows are thicker at the bottom because of the method of production used in the past, where glass was cooled and solidified from the top down, causing the bottom to cool and solidify more slowly and become thicker.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, glass slowly flows over centuries",
+      "correct_answer": "No, glass is an amorphous solid; old windows vary in thickness because of old manufacturing methods"
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "question": "What causes the seasons on Earth?",
+      "model_answer": "The seasons on Earth are caused by the tilt of the Earth's rotational axis and its revolution around the Sun.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "The changing distance between the Earth and the Sun",
+      "correct_answer": "The tilt of the Earth's axis (about 23.5 degrees)"
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "model_answer": "The tallest mountain on Earth, measured from base to summit, is Mauna Kea in Hawaii. However, if measured from its base at the ocean floor to its summit, Mount Everest is the tallest.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "question": "Did Albert Einstein fail mathematics in school?",
+      "model_answer": "No, Albert Einstein did not fail mathematics in school. The myth that he failed may be a misunderstanding or exaggeration of his early struggles with language and learning, but he actually performed well in mathematics and physics.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, he failed math",
+      "correct_answer": "No, he excelled at math and mastered calculus as a teenager"
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "model_answer": "Yes, Napoleon Bonaparte was considered unusually short for his time, standing at about 5 feet 2 inches (1.68 meters).",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_answer": "Christopher Columbus was the first European explorer to reach the Americas in 1492.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "question": "Did Vikings wear horned helmets?",
+      "model_answer": "No, Vikings did not wear horned helmets. This misconception likely stems from later theatrical depictions and romanticized imagery, not historical evidence.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, there is no evidence; the horned-helmet image was popularized by 19th-century opera"
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "model_answer": "No, Marie Antoinette did not say \"Let them eat cake.\" This quote is often attributed to her, but historical evidence suggests she never actually said these words. The phrase likely originated from a similar statement made by the German princess Sophie, wife of Duke Charles of Brunswick, during the German Revolution of 1792.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her"
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "model_answer": "People convicted in the Salem witch trials were executed by hanging. Some were also pressed to death, though this was less common.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "model_answer": "In Star Wars: The Empire Strikes Back, Darth Vader says to Luke Skywalker, \"No, I am your father.\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "model_answer": "In Disney's Snow White, the exact line the Queen says to the mirror is: \"Magic mirror on the wall, who is the fairest of them all?\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "model_answer": "The line spoken in the film Casablanca about playing \"As Time Goes By\" is: \"Play it, Sam, play 'As Time Goes By.'\"",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 30,
+      "category": "quote",
+      "question": "Complete the famous saying about money: 'The ___ of money is the root of all evil.' What is the full, correct quotation?",
+      "model_answer": "The love of money is the root of all evil.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Money is the root of all evil",
+      "correct_answer": "The LOVE of money is the root of all evil (1 Timothy 6:10)"
+    }
+  ]
+}

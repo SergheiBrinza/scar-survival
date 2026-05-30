@@ -1,0 +1,92 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "n_traps": 14,
+  "n_cycles": 10,
+  "regimes": {
+    "R1": {
+      "per_cycle_correct_pct": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "survived_through_pct": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "scar_survival_final": 100.0,
+      "mean_per_cycle_pct": 100.0
+    },
+    "R2": {
+      "per_cycle_correct_pct": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "survived_through_pct": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scar_survival_final": 0.0,
+      "mean_per_cycle_pct": 10.0
+    },
+    "R3": {
+      "per_cycle_correct_pct": [
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3
+      ],
+      "survived_through_pct": [
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3,
+        14.3
+      ],
+      "scar_survival_final": 14.3,
+      "mean_per_cycle_pct": 14.3
+    }
+  },
+  "discrimination_verdict": "metric_discriminates"
+}

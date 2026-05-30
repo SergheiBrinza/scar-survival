@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "set": "setA",
+  "n_total": 58,
+  "n_wrong": 18,
+  "n_picked": 10,
+  "picked_ids": [
+    9,
+    13,
+    16,
+    20,
+    23,
+    25,
+    27,
+    28,
+    29,
+    33
+  ],
+  "picks": [
+    {
+      "id": 9,
+      "question": "What is the actual color of the Sun?",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)",
+      "instinct_answer": "The Sun appears white to the naked eye.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 13,
+      "question": "How long is a goldfish's memory?",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)",
+      "instinct_answer": "A goldfish's memory can last up to about 4 hours.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 16,
+      "question": "Which part of the tongue detects sweet tastes?",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)",
+      "instinct_answer": "The taste buds on the tip and margins of the tongue primarily detect sweet tastes.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 20,
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)",
+      "instinct_answer": "Mount Everest",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 23,
+      "question": "Which European explorer was the first to reach the Americas?",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus",
+      "instinct_answer": "Christopher Columbus was the first European explorer to reach the Americas.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 25,
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her",
+      "instinct_answer": "No, Marie Antoinette did not say 'Let them eat cake'. This quote is often mistakenly attributed to her, but it actually originated from Jean-Paul Marat.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 27,
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')",
+      "instinct_answer": "Darth Vader says, \"You are your father's son.\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 28,
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall",
+      "instinct_answer": "The exact line the Queen says to the mirror is \"Mirror, mirror on the wall, who is the fairest one of all?\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 29,
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)",
+      "instinct_answer": "\"I say we give them something they can dance to.\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 33,
+      "question": "Who was the first person to reach the South Pole?",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died",
+      "instinct_answer": "Robert Falcon Scott was the first person to reach the South Pole, arriving there on January 17, 1912, shortly after being beaten to the pole by Norwegian explorer Roald Amundsen.",
+      "verdict": "incorrect"
+    }
+  ]
+}

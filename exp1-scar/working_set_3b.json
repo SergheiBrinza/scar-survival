@@ -1,0 +1,125 @@
+{
+  "name": "working_set_3b",
+  "description": "Working set of fired traps on the SMALLER model Qwen2.5-3B-Instruct. The model confidently gives an INCORRECT answer (often its own hallucination). The experiment is run on these: notebook + contrastive decoding.",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "decoding": "greedy (temperature=0, seed=0)",
+  "run_language": "english",
+  "judging_note": "Auto-labeling by markers yielded 6; manual review of all 58 raised it to 14 (3B more often hallucinates an unexpected wrong answer that simple markers miss). Contradictory #33 excluded.",
+  "total_candidates_tested": 58,
+  "total_working": 14,
+  "overall_fire_rate_percent": 24.1,
+  "traps": [
+    {
+      "id": 13,
+      "category": "science",
+      "question": "How long is a goldfish's memory?",
+      "model_wrong_answer": "A goldfish's memory can last up to about 4 hours.",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)",
+      "anticipated_memorized_wrong": "About 3 seconds"
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "model_wrong_answer": "The taste buds on the tip and margins of the tongue primarily detect sweet tastes.",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)",
+      "anticipated_memorized_wrong": "Only the tip of the tongue"
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "model_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)",
+      "anticipated_memorized_wrong": "Mount Everest"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "model_wrong_answer": "Christopher Columbus was the first European explorer to reach the Americas.",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus",
+      "anticipated_memorized_wrong": "Christopher Columbus"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "model_wrong_answer": "Darth Vader says, \"You are your father's son.\"",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')",
+      "anticipated_memorized_wrong": "Luke, I am your father"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "model_wrong_answer": "The exact line the Queen says to the mirror is \"Mirror, mirror on the wall, who is the fairest one of all?\"",
+      "correct_answer": "Magic mirror on the wall",
+      "anticipated_memorized_wrong": "Mirror, mirror on the wall"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "model_wrong_answer": "\"I say we give them something they can dance to.\"",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)",
+      "anticipated_memorized_wrong": "Play it again, Sam"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "model_wrong_answer": "The first person to complete a voyage circumnavigating the globe was Ferdinand Magellan.",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)",
+      "anticipated_memorized_wrong": "Ferdinand Magellan"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "model_wrong_answer": "Nicolaus Copernicus is generally considered the first person to propose that the Earth revolves around the Sun.",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus",
+      "anticipated_memorized_wrong": "Nicolaus Copernicus"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "question": "Who was the first woman in space?",
+      "model_wrong_answer": "Svetlana Savitskaya was the first woman in space.",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)",
+      "anticipated_memorized_wrong": "Sally Ride"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "model_wrong_answer": "The first animal(s) sent into space was a mouse named Gertrude on a US V-2 rocket in 1949.",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)",
+      "anticipated_memorized_wrong": "Laika the dog"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "question": "Who invented the telescope?",
+      "model_wrong_answer": "The telescope was invented by multiple individuals independently in the early 17th century, but it is commonly credited to Galileo Galilei.",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically",
+      "anticipated_memorized_wrong": "Galileo Galilei"
+    },
+    {
+      "id": 40,
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_wrong_answer": "The oldest surviving feature-length animated film is \"Steamboat Willie\" from 1928, featuring Mickey Mouse.",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger",
+      "anticipated_memorized_wrong": "Snow White and the Seven Dwarfs (1937)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "question": "On Venus, is a single day longer than a full year?",
+      "model_wrong_answer": "No, a single day on Venus is not longer than a full year. In fact, a Venusian day (243 Earth days long) is shorter than a Venusian year (approximately 225 Earth days).",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days",
+      "anticipated_memorized_wrong": "No"
+    }
+  ]
+}

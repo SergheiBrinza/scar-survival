@@ -1,0 +1,521 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "run_language": "english",
+  "decoding": "greedy (temperature=0, seed=0)",
+  "total": 28,
+  "n_fired": 3,
+  "n_not_fired": 25,
+  "n_ambiguous": 0,
+  "hit_rate_percent": 10.7,
+  "fired_traps": [
+    {
+      "id": 40,
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_answer": "The oldest surviving feature-length animated film is \"Pinocchio\" (1940), produced by Walt Disney Productions.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 44,
+      "category": "false-friend",
+      "question": "How many stomachs does a cow have?",
+      "model_answer": "A cow has four stomachs.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 50,
+      "category": "false-friend",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "model_answer": "Greenland is actually greener and more vegetated than Iceland.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    }
+  ],
+  "not_fired": [
+    {
+      "id": 31,
+      "category": "history-duration",
+      "question": "How many years did the Hundred Years' War actually last?",
+      "model_answer": "The Hundred Years' War lasted for 116 years, from 1337 to 1453.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "100 years",
+      "correct_answer": "116 years (1337-1453)"
+    },
+    {
+      "id": 32,
+      "category": "history-date",
+      "question": "In what year did the Boston Tea Party take place?",
+      "model_answer": "The Boston Tea Party took place in 1773.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "1776",
+      "correct_answer": "1773"
+    },
+    {
+      "id": 33,
+      "category": "firsts",
+      "question": "Who was the first person to reach the South Pole?",
+      "model_answer": "Roald Amundsen was the first person to reach the South Pole, arriving on December 14, 1911.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "model_answer": "The first person to complete a voyage circumnavigating the globe was Ferdinand Magellan, although he was killed in the Philippines during the voyage, and it was completed by his second in command, Juan Sebastián Elcano.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Ferdinand Magellan",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "model_answer": "The first person known to propose that the Earth revolves around the Sun was Aristarchus of Samos, who lived in the 3rd century BCE.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "question": "Who was the first woman in space?",
+      "model_answer": "The first woman in space was Valentina Tereshkova, a Soviet astronaut who flew in 1963.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sally Ride",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "model_answer": "The first animals sent into space were fruit flies, on the United States' Explorer 1 mission on January 31, 1958. However, the first vertebrates in space were dogs, with the Soviet Union launching Laika, a female stray dog, on Sputnik 2 on November 3, 1957.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "question": "Who invented the telescope?",
+      "model_answer": "The invention of the telescope is often attributed to Dutch lensmaker Hans Lippershey in 1608, although there is some debate about who was first.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Galileo Galilei",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    },
+    {
+      "id": 39,
+      "category": "authorship",
+      "question": "Who invented movable-type printing?",
+      "model_answer": "Movable-type printing was invented by Bi Sheng in China in the 11th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg"
+    },
+    {
+      "id": 41,
+      "category": "science-number",
+      "question": "Which is the hottest planet in the Solar System?",
+      "model_answer": "Venus is the hottest planet in the Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mercury",
+      "correct_answer": "Venus (~465 C surface, due to its thick atmosphere)"
+    },
+    {
+      "id": 42,
+      "category": "science-number",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "model_answer": "The most abundant gas in Earth's atmosphere is nitrogen, making up about 78% of the atmosphere.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Oxygen",
+      "correct_answer": "Nitrogen (~78%); oxygen is only ~21%"
+    },
+    {
+      "id": 43,
+      "category": "science-number",
+      "question": "How many hearts does an octopus have?",
+      "model_answer": "An octopus has three hearts.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "One",
+      "correct_answer": "Three (two branchial + one systemic)"
+    },
+    {
+      "id": 45,
+      "category": "science-number",
+      "question": "What is the smallest planet in the Solar System?",
+      "model_answer": "The smallest planet in the Solar System is Mercury.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Pluto",
+      "correct_answer": "Mercury (Pluto is no longer a planet since 2006)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "question": "On Venus, is a single day longer than a full year?",
+      "model_answer": "Yes, a single day on Venus (its rotational period) is longer than a year (its orbital period).",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    },
+    {
+      "id": 47,
+      "category": "science-number",
+      "question": "How many bones is a human baby born with?",
+      "model_answer": "A human baby is born with approximately 270 bones.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)"
+    },
+    {
+      "id": 48,
+      "category": "science-number",
+      "question": "Which language has the most native speakers in the world?",
+      "model_answer": "Mandarin Chinese has the most native speakers in the world.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "English",
+      "correct_answer": "Mandarin Chinese (English leads only in total speakers)"
+    },
+    {
+      "id": 49,
+      "category": "false-friend",
+      "question": "Are the Canary Islands named after the canary bird?",
+      "model_answer": "No, the Canary Islands are not named after the canary bird. The islands were named by the Phoenicians around 1000 BCE, derived from the Latin \"Canariae Insulae,\" meaning \"Islands of the Dogs,\" likely due to the presence of large wild dogs on the islands. The name \"canary\" for the bird came much later, in the 15th century, and is believed to be derived from the islands' name.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - named after dogs (Latin 'Canariae Insulae'); the bird was named after the islands"
+    },
+    {
+      "id": 51,
+      "category": "false-friend",
+      "question": "Are guinea pigs actually pigs, and are they from Guinea?",
+      "model_answer": "No, guinea pigs are not actually pigs and they do not come from Guinea. They are rodents native to South America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they are rodents native to the South American Andes"
+    },
+    {
+      "id": 52,
+      "category": "false-friend",
+      "question": "Is a firefly a type of fly?",
+      "model_answer": "No, a firefly is not a type of fly. Fireflies are beetles.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a firefly is a beetle (family Lampyridae)"
+    },
+    {
+      "id": 53,
+      "category": "false-friend",
+      "question": "Were the so-called Arabic numerals invented by the Arabs?",
+      "model_answer": "No, the so-called Arabic numerals were not invented by the Arabs. They originated in India and were later transmitted to the Arab world, where they were adopted and then spread to the Western world.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they originated in India (Hindu-Arabic numerals); Arabs transmitted them to Europe"
+    },
+    {
+      "id": 54,
+      "category": "false-friend",
+      "question": "Is the 'funny bone' actually a bone?",
+      "model_answer": "No, the \"funny bone\" is not a bone. It is a nerve (the ulnar nerve) that runs along the elbow area. When you hit your elbow, you stimulate this nerve, causing a tingling or numbness sensation.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is the ulnar nerve"
+    },
+    {
+      "id": 55,
+      "category": "false-friend",
+      "question": "In which country did the Panama hat originate?",
+      "model_answer": "The Panama hat originated in Ecuador.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Panama",
+      "correct_answer": "Ecuador (they were shipped via Panama, hence the name)"
+    },
+    {
+      "id": 56,
+      "category": "false-friend",
+      "question": "Is the turkey bird native to the country Turkey?",
+      "model_answer": "No, the turkey bird is not native to the country Turkey. It is native to Mexico and Central America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - the turkey bird is native to North America"
+    },
+    {
+      "id": 57,
+      "category": "false-friend",
+      "question": "Is catgut (used in strings and sutures) made from cats?",
+      "model_answer": "No, catgut is not made from cats. It is derived from the intestines of sheep, goats, or cattle.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is made from sheep or goat intestines"
+    },
+    {
+      "id": 58,
+      "category": "false-friend",
+      "question": "Is a peanut a true nut?",
+      "model_answer": "No, a peanut is not a true nut. It is technically a legume.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a peanut is a legume"
+    }
+  ],
+  "ambiguous": [],
+  "results": [
+    {
+      "id": 31,
+      "category": "history-duration",
+      "question": "How many years did the Hundred Years' War actually last?",
+      "model_answer": "The Hundred Years' War lasted for 116 years, from 1337 to 1453.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "100 years",
+      "correct_answer": "116 years (1337-1453)"
+    },
+    {
+      "id": 32,
+      "category": "history-date",
+      "question": "In what year did the Boston Tea Party take place?",
+      "model_answer": "The Boston Tea Party took place in 1773.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "1776",
+      "correct_answer": "1773"
+    },
+    {
+      "id": 33,
+      "category": "firsts",
+      "question": "Who was the first person to reach the South Pole?",
+      "model_answer": "Roald Amundsen was the first person to reach the South Pole, arriving on December 14, 1911.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "model_answer": "The first person to complete a voyage circumnavigating the globe was Ferdinand Magellan, although he was killed in the Philippines during the voyage, and it was completed by his second in command, Juan Sebastián Elcano.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Ferdinand Magellan",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "model_answer": "The first person known to propose that the Earth revolves around the Sun was Aristarchus of Samos, who lived in the 3rd century BCE.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "question": "Who was the first woman in space?",
+      "model_answer": "The first woman in space was Valentina Tereshkova, a Soviet astronaut who flew in 1963.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Sally Ride",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "model_answer": "The first animals sent into space were fruit flies, on the United States' Explorer 1 mission on January 31, 1958. However, the first vertebrates in space were dogs, with the Soviet Union launching Laika, a female stray dog, on Sputnik 2 on November 3, 1957.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "question": "Who invented the telescope?",
+      "model_answer": "The invention of the telescope is often attributed to Dutch lensmaker Hans Lippershey in 1608, although there is some debate about who was first.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Galileo Galilei",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    },
+    {
+      "id": 39,
+      "category": "authorship",
+      "question": "Who invented movable-type printing?",
+      "model_answer": "Movable-type printing was invented by Bi Sheng in China in the 11th century.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg"
+    },
+    {
+      "id": 40,
+      "category": "firsts",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "model_answer": "The oldest surviving feature-length animated film is \"Pinocchio\" (1940), produced by Walt Disney Productions.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 41,
+      "category": "science-number",
+      "question": "Which is the hottest planet in the Solar System?",
+      "model_answer": "Venus is the hottest planet in the Solar System.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Mercury",
+      "correct_answer": "Venus (~465 C surface, due to its thick atmosphere)"
+    },
+    {
+      "id": 42,
+      "category": "science-number",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "model_answer": "The most abundant gas in Earth's atmosphere is nitrogen, making up about 78% of the atmosphere.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Oxygen",
+      "correct_answer": "Nitrogen (~78%); oxygen is only ~21%"
+    },
+    {
+      "id": 43,
+      "category": "science-number",
+      "question": "How many hearts does an octopus have?",
+      "model_answer": "An octopus has three hearts.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "One",
+      "correct_answer": "Three (two branchial + one systemic)"
+    },
+    {
+      "id": 44,
+      "category": "false-friend",
+      "question": "How many stomachs does a cow have?",
+      "model_answer": "A cow has four stomachs.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 45,
+      "category": "science-number",
+      "question": "What is the smallest planet in the Solar System?",
+      "model_answer": "The smallest planet in the Solar System is Mercury.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Pluto",
+      "correct_answer": "Mercury (Pluto is no longer a planet since 2006)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "question": "On Venus, is a single day longer than a full year?",
+      "model_answer": "Yes, a single day on Venus (its rotational period) is longer than a year (its orbital period).",
+      "verdict": "correct",
+      "memorized_wrong_answer": "No",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    },
+    {
+      "id": 47,
+      "category": "science-number",
+      "question": "How many bones is a human baby born with?",
+      "model_answer": "A human baby is born with approximately 270 bones.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)"
+    },
+    {
+      "id": 48,
+      "category": "science-number",
+      "question": "Which language has the most native speakers in the world?",
+      "model_answer": "Mandarin Chinese has the most native speakers in the world.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "English",
+      "correct_answer": "Mandarin Chinese (English leads only in total speakers)"
+    },
+    {
+      "id": 49,
+      "category": "false-friend",
+      "question": "Are the Canary Islands named after the canary bird?",
+      "model_answer": "No, the Canary Islands are not named after the canary bird. The islands were named by the Phoenicians around 1000 BCE, derived from the Latin \"Canariae Insulae,\" meaning \"Islands of the Dogs,\" likely due to the presence of large wild dogs on the islands. The name \"canary\" for the bird came much later, in the 15th century, and is believed to be derived from the islands' name.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - named after dogs (Latin 'Canariae Insulae'); the bird was named after the islands"
+    },
+    {
+      "id": 50,
+      "category": "false-friend",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "model_answer": "Greenland is actually greener and more vegetated than Iceland.",
+      "verdict": "wrong_instinct",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    },
+    {
+      "id": 51,
+      "category": "false-friend",
+      "question": "Are guinea pigs actually pigs, and are they from Guinea?",
+      "model_answer": "No, guinea pigs are not actually pigs and they do not come from Guinea. They are rodents native to South America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they are rodents native to the South American Andes"
+    },
+    {
+      "id": 52,
+      "category": "false-friend",
+      "question": "Is a firefly a type of fly?",
+      "model_answer": "No, a firefly is not a type of fly. Fireflies are beetles.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a firefly is a beetle (family Lampyridae)"
+    },
+    {
+      "id": 53,
+      "category": "false-friend",
+      "question": "Were the so-called Arabic numerals invented by the Arabs?",
+      "model_answer": "No, the so-called Arabic numerals were not invented by the Arabs. They originated in India and were later transmitted to the Arab world, where they were adopted and then spread to the Western world.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they originated in India (Hindu-Arabic numerals); Arabs transmitted them to Europe"
+    },
+    {
+      "id": 54,
+      "category": "false-friend",
+      "question": "Is the 'funny bone' actually a bone?",
+      "model_answer": "No, the \"funny bone\" is not a bone. It is a nerve (the ulnar nerve) that runs along the elbow area. When you hit your elbow, you stimulate this nerve, causing a tingling or numbness sensation.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is the ulnar nerve"
+    },
+    {
+      "id": 55,
+      "category": "false-friend",
+      "question": "In which country did the Panama hat originate?",
+      "model_answer": "The Panama hat originated in Ecuador.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Panama",
+      "correct_answer": "Ecuador (they were shipped via Panama, hence the name)"
+    },
+    {
+      "id": 56,
+      "category": "false-friend",
+      "question": "Is the turkey bird native to the country Turkey?",
+      "model_answer": "No, the turkey bird is not native to the country Turkey. It is native to Mexico and Central America.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - the turkey bird is native to North America"
+    },
+    {
+      "id": 57,
+      "category": "false-friend",
+      "question": "Is catgut (used in strings and sutures) made from cats?",
+      "model_answer": "No, catgut is not made from cats. It is derived from the intestines of sheep, goats, or cattle.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is made from sheep or goat intestines"
+    },
+    {
+      "id": 58,
+      "category": "false-friend",
+      "question": "Is a peanut a true nut?",
+      "model_answer": "No, a peanut is not a true nut. It is technically a legume.",
+      "verdict": "correct",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a peanut is a legume"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "load1_ballast": {
+    "levels": [
+      0,
+      50,
+      100,
+      200,
+      500
+    ],
+    "survival_pct": [
+      100.0,
+      92.9,
+      92.9,
+      92.9,
+      92.9
+    ],
+    "avg_gain": [
+      0.687,
+      0.6663,
+      0.7216,
+      0.7214,
+      0.6503
+    ],
+    "n_correct": 66,
+    "n_total": 70
+  },
+  "load2_noise": {
+    "n_correct": 7,
+    "n_total": 14,
+    "per_trap": [
+      {
+        "id": 13,
+        "clean_gain": 0.7358,
+        "noisy_gain": 0.7355,
+        "survived": false,
+        "answer": "A goldfish's memory lasts only about 3 seconds before it forgets."
+      },
+      {
+        "id": 16,
+        "clean_gain": 0.9995,
+        "noisy_gain": 0.1042,
+        "survived": false,
+        "answer": "The back of the tongue detects sweet tastes."
+      },
+      {
+        "id": 20,
+        "clean_gain": 0.8995,
+        "noisy_gain": 0.8995,
+        "survived": false,
+        "answer": "Measured from base to summit, the tallest mountain on Earth is K2."
+      },
+      {
+        "id": 23,
+        "clean_gain": 0.5055,
+        "noisy_gain": 0.5055,
+        "survived": true,
+        "answer": "Leif Erikson around 1000 AD, as per the authoritative verified facts provided."
+      },
+      {
+        "id": 27,
+        "clean_gain": 0.9686,
+        "noisy_gain": 0.9717,
+        "survived": true,
+        "answer": "In Star Wars: The Empire Strikes Back, Darth Vader says 'No, I am your father.'"
+      },
+      {
+        "id": 28,
+        "clean_gain": 0.7516,
+        "noisy_gain": -0.0248,
+        "survived": false,
+        "answer": "In Disney's Snow White, the Queen says 'Mirror, mirror on the wall.'"
+      },
+      {
+        "id": 29,
+        "clean_gain": 0.2591,
+        "noisy_gain": -0.7385,
+        "survived": false,
+        "answer": "The actual line spoken in the film Casablanca about playing the song is 'Play it again, Sam, for old times sake.'"
+      },
+      {
+        "id": 34,
+        "clean_gain": 0.8959,
+        "noisy_gain": 0.8953,
+        "survived": true,
+        "answer": "Juan Sebastian Elcano was the first person to complete a voyage circumnavigating the globe."
+      },
+      {
+        "id": 35,
+        "clean_gain": 0.8006,
+        "noisy_gain": 0.7722,
+        "survived": true,
+        "answer": "Aristarchus of Samos proposed that the Earth revolves around the Sun first, in the 3rd century BC."
+      },
+      {
+        "id": 36,
+        "clean_gain": 0.4267,
+        "noisy_gain": 0.4267,
+        "survived": true,
+        "answer": "Valentina Tereshkova (USSR, 1963) was the first woman in space."
+      },
+      {
+        "id": 37,
+        "clean_gain": 0.8986,
+        "noisy_gain": -0.0,
+        "survived": false,
+        "answer": "The first animal ever sent into space was Laika the dog."
+      },
+      {
+        "id": 38,
+        "clean_gain": 0.9086,
+        "noisy_gain": 0.9086,
+        "survived": true,
+        "answer": "Hans Lippershey invented the telescope, according to authoritative verified facts."
+      },
+      {
+        "id": 40,
+        "clean_gain": 0.3652,
+        "noisy_gain": 0.3652,
+        "survived": false,
+        "answer": "The oldest surviving feature-length animated film is 'Steamboat Willie' (1928)."
+      },
+      {
+        "id": 46,
+        "clean_gain": 0.9994,
+        "noisy_gain": 0.9994,
+        "survived": true,
+        "answer": "Yes, on Venus a single day is longer than a full year."
+      }
+    ]
+  },
+  "load4_sticky": {
+    "n_correct": 12,
+    "n_total": 12,
+    "avg_gain": 0.5791,
+    "per_trap": [
+      {
+        "id": "s11",
+        "P_instinct": 0.0,
+        "P_contrastive": 0.0,
+        "gain": 0.0,
+        "survived": true
+      },
+      {
+        "id": "s3",
+        "P_instinct": 0.0019,
+        "P_contrastive": 1.0,
+        "gain": 0.9981,
+        "survived": true
+      },
+      {
+        "id": "s5",
+        "P_instinct": 0.0027,
+        "P_contrastive": 1.0,
+        "gain": 0.9973,
+        "survived": true
+      },
+      {
+        "id": "s7",
+        "P_instinct": 0.0439,
+        "P_contrastive": 0.7308,
+        "gain": 0.6869,
+        "survived": true
+      },
+      {
+        "id": "s2",
+        "P_instinct": 0.0748,
+        "P_contrastive": 1.0,
+        "gain": 0.9252,
+        "survived": true
+      },
+      {
+        "id": "s6",
+        "P_instinct": 0.1089,
+        "P_contrastive": 0.9987,
+        "gain": 0.8898,
+        "survived": true
+      },
+      {
+        "id": "s4",
+        "P_instinct": 0.3277,
+        "P_contrastive": 1.0,
+        "gain": 0.6723,
+        "survived": true
+      },
+      {
+        "id": "s14",
+        "P_instinct": 0.3468,
+        "P_contrastive": 1.0,
+        "gain": 0.6532,
+        "survived": true
+      },
+      {
+        "id": "s17",
+        "P_instinct": 0.3594,
+        "P_contrastive": 1.0,
+        "gain": 0.6406,
+        "survived": true
+      },
+      {
+        "id": "s1",
+        "P_instinct": 0.5158,
+        "P_contrastive": 1.0,
+        "gain": 0.4842,
+        "survived": true
+      },
+      {
+        "id": "s20",
+        "P_instinct": 0.999,
+        "P_contrastive": 1.0,
+        "gain": 0.001,
+        "survived": true
+      },
+      {
+        "id": "s16",
+        "P_instinct": 0.9998,
+        "P_contrastive": 0.9999,
+        "gain": 0.0001,
+        "survived": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "n_cycles": 10,
+  "n_traps": 14,
+  "per_cycle_survival_pct": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "per_cycle_avg_confidence_gain": [
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439,
+    0.7439
+  ],
+  "survived_through_pct": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "scar_survival_rate_final": 100.0,
+  "per_trap": [
+    {
+      "id": 13,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358,
+        0.7358
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 16,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995,
+        0.9995
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 20,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995,
+        0.8995
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 23,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055,
+        0.5055
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 27,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686,
+        0.9686
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 28,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516,
+        0.7516
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 29,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591,
+        0.2591
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 34,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959,
+        0.8959
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 35,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006,
+        0.8006
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 36,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267,
+        0.4267
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 37,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986,
+        0.8986
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 38,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086,
+        0.9086
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 40,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652,
+        0.3652
+      ],
+      "always_correct": true
+    },
+    {
+      "id": 46,
+      "correct_each_cycle": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "gain_each_cycle": [
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994,
+        0.9994
+      ],
+      "always_correct": true
+    }
+  ]
+}

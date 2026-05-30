@@ -1,0 +1,104 @@
+{
+  "name": "placebo_notebook",
+  "description": "14 placebo entries: irrelevant administrative noise instead of refuting facts. Should NOT override the instinct.",
+  "entries": [
+    {
+      "id": 13,
+      "question": "How long is a goldfish's memory?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 16,
+      "question": "Which part of the tongue detects sweet tastes?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 20,
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 23,
+      "question": "Which European explorer was the first to reach the Americas?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 27,
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 28,
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 29,
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 34,
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 36,
+      "question": "Who was the first woman in space?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 38,
+      "question": "Who invented the telescope?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    },
+    {
+      "id": 40,
+      "question": "What is the oldest surviving feature-length animated film?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 46,
+      "question": "On Venus, is a single day longer than a full year?",
+      "label": "placebo_irrelevant",
+      "authoritative_fact": "General reference note: standardized archive catalog entries are maintained according to ISO procedures and updated quarterly.",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    }
+  ]
+}

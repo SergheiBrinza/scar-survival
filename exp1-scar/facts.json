@@ -1,0 +1,248 @@
+{
+  "dataset": "trap-facts-v1",
+  "description": "30 trap facts for the 'scar' experiment. Each fact is a case where the model is instinctively inclined to give a MEMORIZED but INCORRECT answer; the correct answer is different.",
+  "provenance_note": "Traps were collected IN THE STYLE of knowledge-conflict (ClashEval) and memorized-continuation (MemoTrap) benchmarks, plus well-documented persistent misconceptions. These are NOT verbatim strings from those datasets (they aren't loaded locally), but verifiable analogues of the same type. All 'correct answers' are verifiable against publicly available sources.",
+  "run_language_note": "Questions are written in English (that is how the traps are calibrated and most reliably fire). The experiment language is English.",
+  "facts": [
+    {
+      "id": 1,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of Australia?",
+      "memorized_wrong_answer": "Sydney",
+      "correct_answer": "Canberra"
+    },
+    {
+      "id": 2,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of Turkey?",
+      "memorized_wrong_answer": "Istanbul",
+      "correct_answer": "Ankara"
+    },
+    {
+      "id": 3,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of Canada?",
+      "memorized_wrong_answer": "Toronto",
+      "correct_answer": "Ottawa"
+    },
+    {
+      "id": 4,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of Brazil?",
+      "memorized_wrong_answer": "Rio de Janeiro",
+      "correct_answer": "Brasilia"
+    },
+    {
+      "id": 5,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of the United States?",
+      "memorized_wrong_answer": "New York",
+      "correct_answer": "Washington, D.C."
+    },
+    {
+      "id": 6,
+      "category": "geography",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "What is the capital of Switzerland?",
+      "memorized_wrong_answer": "Zurich",
+      "correct_answer": "Bern"
+    },
+    {
+      "id": 7,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "How many planets are there in our Solar System?",
+      "memorized_wrong_answer": "Nine",
+      "correct_answer": "Eight (Pluto was reclassified as a dwarf planet in 2006)"
+    },
+    {
+      "id": 8,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "What color is human blood inside the veins, before it is exposed to air?",
+      "memorized_wrong_answer": "Blue",
+      "correct_answer": "Dark red (blood is always red; veins only look blue through the skin)"
+    },
+    {
+      "id": 9,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "What is the actual color of the Sun?",
+      "memorized_wrong_answer": "Yellow",
+      "correct_answer": "White (it emits across the whole visible spectrum; it only looks yellow through the atmosphere)"
+    },
+    {
+      "id": 10,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "What percentage of their brain do humans actually use?",
+      "memorized_wrong_answer": "10%",
+      "correct_answer": "Virtually all of it (the '10% of the brain' claim is a myth)"
+    },
+    {
+      "id": 11,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Is the Great Wall of China visible from the Moon with the naked eye?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No (it is not visible from the Moon with the naked eye, and barely if at all from low Earth orbit)"
+    },
+    {
+      "id": 12,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Are bats blind?",
+      "memorized_wrong_answer": "Yes, bats are blind",
+      "correct_answer": "No, bats can see; many also use echolocation"
+    },
+    {
+      "id": 13,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "How long is a goldfish's memory?",
+      "memorized_wrong_answer": "About 3 seconds",
+      "correct_answer": "Months (goldfish can remember things for weeks to months)"
+    },
+    {
+      "id": 14,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "If you swallow chewing gum, how long does it stay in your stomach?",
+      "memorized_wrong_answer": "Seven years",
+      "correct_answer": "It passes through normally within a few days; it does not stay for years"
+    },
+    {
+      "id": 15,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Can lightning strike the same place twice?",
+      "memorized_wrong_answer": "No, lightning never strikes the same place twice",
+      "correct_answer": "Yes, it often strikes the same place repeatedly (e.g. tall buildings many times a year)"
+    },
+    {
+      "id": 16,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Which part of the tongue detects sweet tastes?",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)"
+    },
+    {
+      "id": 17,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Is pure (distilled) water a good conductor of electricity?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, pure water is a poor conductor; conductivity comes from dissolved ions in ordinary water"
+    },
+    {
+      "id": 18,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "Is glass a slow-flowing liquid, which is why old windows are thicker at the bottom?",
+      "memorized_wrong_answer": "Yes, glass slowly flows over centuries",
+      "correct_answer": "No, glass is an amorphous solid; old windows vary in thickness because of old manufacturing methods"
+    },
+    {
+      "id": 19,
+      "category": "science",
+      "trap_type": "common misconception",
+      "question": "What causes the seasons on Earth?",
+      "memorized_wrong_answer": "The changing distance between the Earth and the Sun",
+      "correct_answer": "The tilt of the Earth's axis (about 23.5 degrees)"
+    },
+    {
+      "id": 20,
+      "category": "science",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "Measured from base to summit, what is the tallest mountain on Earth?",
+      "memorized_wrong_answer": "Mount Everest",
+      "correct_answer": "Mauna Kea (~10,200 m base-to-summit; Everest is highest above sea level at 8,849 m)"
+    },
+    {
+      "id": 21,
+      "category": "history",
+      "trap_type": "common misconception",
+      "question": "Did Albert Einstein fail mathematics in school?",
+      "memorized_wrong_answer": "Yes, he failed math",
+      "correct_answer": "No, he excelled at math and mastered calculus as a teenager"
+    },
+    {
+      "id": 22,
+      "category": "history",
+      "trap_type": "common misconception",
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up"
+    },
+    {
+      "id": 23,
+      "category": "history",
+      "trap_type": "knowledge-conflict (ClashEval-style prior)",
+      "question": "Which European explorer was the first to reach the Americas?",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus"
+    },
+    {
+      "id": 24,
+      "category": "history",
+      "trap_type": "common misconception",
+      "question": "Did Vikings wear horned helmets?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No, there is no evidence; the horned-helmet image was popularized by 19th-century opera"
+    },
+    {
+      "id": 25,
+      "category": "history",
+      "trap_type": "common misconception",
+      "question": "Did Marie Antoinette say 'Let them eat cake'?",
+      "memorized_wrong_answer": "Yes, she said it",
+      "correct_answer": "No, there is no evidence she said it; the phrase predates and was misattributed to her"
+    },
+    {
+      "id": 26,
+      "category": "history",
+      "trap_type": "common misconception",
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned"
+    },
+    {
+      "id": 27,
+      "category": "quote",
+      "trap_type": "memorized-continuation (MemoTrap-style)",
+      "question": "In Star Wars: The Empire Strikes Back, what exact line does Darth Vader say to Luke about being his father?",
+      "memorized_wrong_answer": "Luke, I am your father",
+      "correct_answer": "No, I am your father (the line never starts with 'Luke')"
+    },
+    {
+      "id": 28,
+      "category": "quote",
+      "trap_type": "memorized-continuation (MemoTrap-style)",
+      "question": "In Disney's Snow White, what is the exact line the Queen says to the mirror?",
+      "memorized_wrong_answer": "Mirror, mirror on the wall",
+      "correct_answer": "Magic mirror on the wall"
+    },
+    {
+      "id": 29,
+      "category": "quote",
+      "trap_type": "memorized-continuation (MemoTrap-style)",
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)"
+    },
+    {
+      "id": 30,
+      "category": "quote",
+      "trap_type": "memorized-continuation (MemoTrap-style)",
+      "question": "Complete the famous saying about money: 'The ___ of money is the root of all evil.' What is the full, correct quotation?",
+      "memorized_wrong_answer": "Money is the root of all evil",
+      "correct_answer": "The LOVE of money is the root of all evil (1 Timothy 6:10)"
+    }
+  ]
+}

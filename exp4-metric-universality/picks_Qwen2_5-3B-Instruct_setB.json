@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "set": "setB",
+  "n_total": 20,
+  "n_wrong": 11,
+  "n_picked": 10,
+  "picked_ids": [
+    100,
+    101,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    113,
+    116
+  ],
+  "picks": [
+    {
+      "id": 100,
+      "question": "Which country has the most pyramids in the world?",
+      "memorized_wrong_answer": "Egypt",
+      "correct_answer": "Sudan (about 200-255 Nubian pyramids, more than Egypt's ~138)",
+      "instinct_answer": "Egypt has the most pyramids in the world.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 101,
+      "question": "As of 2024, what is the most populous country in the world?",
+      "memorized_wrong_answer": "China",
+      "correct_answer": "India (overtook China in April 2023)",
+      "instinct_answer": "As of 2024, the most populous country in the world is expected to be China.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 105,
+      "question": "Which continent has the most countries?",
+      "memorized_wrong_answer": "Asia",
+      "correct_answer": "Africa (54 sovereign countries)",
+      "instinct_answer": "Asia has the most countries.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 106,
+      "question": "What is the longest land border in the world (between two countries)?",
+      "memorized_wrong_answer": "the USA-Mexico border",
+      "correct_answer": "the USA-Canada border (about 8,891 km including Alaska)",
+      "instinct_answer": "The longest land border in the world is between Russia and China, measuring approximately 4,316 miles (6,945 kilometers).",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 107,
+      "question": "Which is the only country crossed by both the Equator and the Tropic of Capricorn?",
+      "memorized_wrong_answer": "Ecuador",
+      "correct_answer": "Brazil",
+      "instinct_answer": "Bolivia",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 108,
+      "question": "Which European country has the longest coastline?",
+      "memorized_wrong_answer": "Greece",
+      "correct_answer": "Norway (about 83,000 km, due to its fjords)",
+      "instinct_answer": "Canada has the longest coastline in Europe, but the longest coastline in the world is shared by Canada and Russia.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 109,
+      "question": "What is the world's largest lake by surface area?",
+      "memorized_wrong_answer": "Lake Superior",
+      "correct_answer": "the Caspian Sea (about 371,000 km^2)",
+      "instinct_answer": "The world's largest lake by surface area is Lake Superior.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 110,
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "memorized_wrong_answer": "France",
+      "correct_answer": "Italy (60 sites)",
+      "instinct_answer": "Qatar has the most UNESCO World Heritage Sites, with 1 site. However, it's important to note that Qatar has only one site, not many.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 113,
+      "question": "What is the largest desert in the world?",
+      "memorized_wrong_answer": "the Sahara",
+      "correct_answer": "Antarctica (a polar desert, about 14 million km^2)",
+      "instinct_answer": "The largest desert in the world is the Sahara Desert.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 116,
+      "question": "Which country was the first to legalise same-sex marriage nationwide?",
+      "memorized_wrong_answer": "Canada",
+      "correct_answer": "the Netherlands (2001)",
+      "instinct_answer": "Canada was the first country to legalise same-sex marriage nationwide.",
+      "verdict": "incorrect"
+    }
+  ]
+}

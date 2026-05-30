@@ -1,0 +1,74 @@
+{
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "set": "setB",
+  "n_total": 20,
+  "n_wrong": 7,
+  "n_picked": 7,
+  "picked_ids": [
+    100,
+    101,
+    102,
+    106,
+    109,
+    117,
+    118
+  ],
+  "picks": [
+    {
+      "id": 100,
+      "question": "Which country has the most pyramids in the world?",
+      "memorized_wrong_answer": "Egypt",
+      "correct_answer": "Sudan (about 200-255 Nubian pyramids, more than Egypt's ~138)",
+      "instinct_answer": "Egypt has the most pyramids in the world, with over 100 known pyramids, the most famous being the Pyramids of Giza.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 101,
+      "question": "As of 2024, what is the most populous country in the world?",
+      "memorized_wrong_answer": "China",
+      "correct_answer": "India (overtook China in April 2023)",
+      "instinct_answer": "As of my knowledge cutoff in 2023, the most populous country in the world is China. However, it's important to note that population figures are constantly changing, and it's always best to check the latest statistics for the most current information. If there have been significant demographic changes",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 102,
+      "question": "Which country has the most natural lakes?",
+      "memorized_wrong_answer": "Russia",
+      "correct_answer": "Canada (roughly 60% of the world's lakes)",
+      "instinct_answer": "Canada has the most natural lakes, with estimates of around 1,500,000 lakes, which is about 20% of the world's freshwater lakes. The Great Lakes, which are shared with the United States, are the largest group of freshwater lakes",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 106,
+      "question": "What is the longest land border in the world (between two countries)?",
+      "memorized_wrong_answer": "the USA-Mexico border",
+      "correct_answer": "the USA-Canada border (about 8,891 km including Alaska)",
+      "instinct_answer": "The longest land border in the world is between Russia and Kazakhstan, stretching approximately 7,644 kilometers (4,752 miles). This border is part of the Ural River's drainage basin and separates the European and Asian parts of Russia from Kazakhstan",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 109,
+      "question": "What is the world's largest lake by surface area?",
+      "memorized_wrong_answer": "Lake Superior",
+      "correct_answer": "the Caspian Sea (about 371,000 km^2)",
+      "instinct_answer": "Lake Superior, located on the border between the United States and Canada, is the world's largest lake by surface area, covering approximately 31,700 square miles (82,100 square kilometers).",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 117,
+      "question": "What is the longest road tunnel in the world?",
+      "memorized_wrong_answer": "the Gotthard Road Tunnel",
+      "correct_answer": "the Laerdal Tunnel in Norway (24.5 km)",
+      "instinct_answer": "The longest road tunnel in the world is the Gotthard Base Tunnel in Switzerland, which is 57.1 kilometers (35.5 miles) long. It officially opened in 2016 and serves as a major transportation route for both rail and road traffic, significantly reducing travel time",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 118,
+      "question": "What is the oldest continuously used national flag design in the world?",
+      "memorized_wrong_answer": "the flag of the United Kingdom",
+      "correct_answer": "the flag of Denmark (the Dannebrog, dating to the 13th century)",
+      "instinct_answer": "The oldest continuously used national flag design in the world is the flag of the United Kingdom. The Union Jack, as it is commonly known, has been in use since 1801, combining elements from the flags of England (St. George's Cross), Scotland (St. Andrew's Cross),",
+      "verdict": "incorrect"
+    }
+  ]
+}

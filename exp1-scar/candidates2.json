@@ -1,0 +1,236 @@
+{
+  "dataset": "trap-candidates-v2",
+  "description": "28 NEW candidate traps in niche categories where the model has no 'this is a myth' reflex but a persistent error is still possible. IDs continue the numbering of facts.json (31+).",
+  "categories": [
+    "historical dates/durations",
+    "authorship & firsts",
+    "narrow science numbers",
+    "false-friends / named-after"
+  ],
+  "facts": [
+    {
+      "id": 31,
+      "category": "history-duration",
+      "trap_type": "narrow date/number",
+      "question": "How many years did the Hundred Years' War actually last?",
+      "memorized_wrong_answer": "100 years",
+      "correct_answer": "116 years (1337-1453)"
+    },
+    {
+      "id": 32,
+      "category": "history-date",
+      "trap_type": "narrow date",
+      "question": "In what year did the Boston Tea Party take place?",
+      "memorized_wrong_answer": "1776",
+      "correct_answer": "1773"
+    },
+    {
+      "id": 33,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "Who was the first person to reach the South Pole?",
+      "memorized_wrong_answer": "Robert Falcon Scott",
+      "correct_answer": "Roald Amundsen (14 Dec 1911); Scott arrived second and died"
+    },
+    {
+      "id": 34,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "Who was the first person to complete a voyage circumnavigating the globe?",
+      "memorized_wrong_answer": "Ferdinand Magellan",
+      "correct_answer": "Juan Sebastian Elcano (Magellan died mid-voyage in 1521)"
+    },
+    {
+      "id": 35,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "Who was the first person known to propose that the Earth revolves around the Sun?",
+      "memorized_wrong_answer": "Nicolaus Copernicus",
+      "correct_answer": "Aristarchus of Samos (~3rd century BC), long before Copernicus"
+    },
+    {
+      "id": 36,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "Who was the first woman in space?",
+      "memorized_wrong_answer": "Sally Ride",
+      "correct_answer": "Valentina Tereshkova (1963); Sally Ride was the first American woman (1983)"
+    },
+    {
+      "id": 37,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)"
+    },
+    {
+      "id": 38,
+      "category": "authorship",
+      "trap_type": "invention authorship",
+      "question": "Who invented the telescope?",
+      "memorized_wrong_answer": "Galileo Galilei",
+      "correct_answer": "Hans Lippershey (patent 1608); Galileo only improved it and used it astronomically"
+    },
+    {
+      "id": 39,
+      "category": "authorship",
+      "trap_type": "invention authorship",
+      "question": "Who invented movable-type printing?",
+      "memorized_wrong_answer": "Johannes Gutenberg",
+      "correct_answer": "Bi Sheng in China (~1040), about 400 years before Gutenberg"
+    },
+    {
+      "id": 40,
+      "category": "firsts",
+      "trap_type": "lesser-known first",
+      "question": "What is the oldest surviving feature-length animated film?",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger"
+    },
+    {
+      "id": 41,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "Which is the hottest planet in the Solar System?",
+      "memorized_wrong_answer": "Mercury",
+      "correct_answer": "Venus (~465 C surface, due to its thick atmosphere)"
+    },
+    {
+      "id": 42,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "memorized_wrong_answer": "Oxygen",
+      "correct_answer": "Nitrogen (~78%); oxygen is only ~21%"
+    },
+    {
+      "id": 43,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "How many hearts does an octopus have?",
+      "memorized_wrong_answer": "One",
+      "correct_answer": "Three (two branchial + one systemic)"
+    },
+    {
+      "id": 44,
+      "category": "false-friend",
+      "trap_type": "common simplification",
+      "question": "How many stomachs does a cow have?",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)"
+    },
+    {
+      "id": 45,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "What is the smallest planet in the Solar System?",
+      "memorized_wrong_answer": "Pluto",
+      "correct_answer": "Mercury (Pluto is no longer a planet since 2006)"
+    },
+    {
+      "id": 46,
+      "category": "science-number",
+      "trap_type": "counterintuitive fact",
+      "question": "On Venus, is a single day longer than a full year?",
+      "memorized_wrong_answer": "No",
+      "correct_answer": "Yes - a Venus day is ~243 Earth days, its year is ~225 Earth days"
+    },
+    {
+      "id": 47,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "How many bones is a human baby born with?",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)"
+    },
+    {
+      "id": 48,
+      "category": "science-number",
+      "trap_type": "close-value confusion",
+      "question": "Which language has the most native speakers in the world?",
+      "memorized_wrong_answer": "English",
+      "correct_answer": "Mandarin Chinese (English leads only in total speakers)"
+    },
+    {
+      "id": 49,
+      "category": "false-friend",
+      "trap_type": "named-after reversal",
+      "question": "Are the Canary Islands named after the canary bird?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - named after dogs (Latin 'Canariae Insulae'); the bird was named after the islands"
+    },
+    {
+      "id": 50,
+      "category": "false-friend",
+      "trap_type": "named-after reversal",
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)"
+    },
+    {
+      "id": 51,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "Are guinea pigs actually pigs, and are they from Guinea?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they are rodents native to the South American Andes"
+    },
+    {
+      "id": 52,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "Is a firefly a type of fly?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a firefly is a beetle (family Lampyridae)"
+    },
+    {
+      "id": 53,
+      "category": "false-friend",
+      "trap_type": "named-after reversal",
+      "question": "Were the so-called Arabic numerals invented by the Arabs?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - they originated in India (Hindu-Arabic numerals); Arabs transmitted them to Europe"
+    },
+    {
+      "id": 54,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "Is the 'funny bone' actually a bone?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is the ulnar nerve"
+    },
+    {
+      "id": 55,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "In which country did the Panama hat originate?",
+      "memorized_wrong_answer": "Panama",
+      "correct_answer": "Ecuador (they were shipped via Panama, hence the name)"
+    },
+    {
+      "id": 56,
+      "category": "false-friend",
+      "trap_type": "named-after reversal",
+      "question": "Is the turkey bird native to the country Turkey?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - the turkey bird is native to North America"
+    },
+    {
+      "id": 57,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "Is catgut (used in strings and sutures) made from cats?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - it is made from sheep or goat intestines"
+    },
+    {
+      "id": 58,
+      "category": "false-friend",
+      "trap_type": "misleading name",
+      "question": "Is a peanut a true nut?",
+      "memorized_wrong_answer": "Yes",
+      "correct_answer": "No - a peanut is a legume"
+    }
+  ]
+}

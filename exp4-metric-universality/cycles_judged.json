@@ -1,0 +1,674 @@
+{
+  "Phi-3_5-mini-instruct/setA": {
+    "1": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "10": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "2": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "3": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "4": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "5": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "6": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "7": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "8": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    },
+    "9": {
+      "10": "correct",
+      "20": "correct",
+      "23": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "35": "correct",
+      "39": "correct",
+      "40": "correct"
+    }
+  },
+  "Phi-3_5-mini-instruct/setB": {
+    "1": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "10": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "2": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "3": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "4": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "5": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "6": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "7": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "8": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    },
+    "9": {
+      "100": "correct",
+      "101": "correct",
+      "102": "correct",
+      "106": "correct",
+      "109": "correct",
+      "117": "correct",
+      "118": "correct"
+    }
+  },
+  "Qwen2_5-3B-Instruct/setA": {
+    "1": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "10": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "2": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "3": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "4": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "5": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "6": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "7": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "8": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    },
+    "9": {
+      "9": "correct",
+      "13": "correct",
+      "16": "correct",
+      "20": "correct",
+      "23": "correct",
+      "25": "correct",
+      "27": "correct",
+      "28": "correct",
+      "29": "correct",
+      "33": "correct"
+    }
+  },
+  "Qwen2_5-3B-Instruct/setB": {
+    "1": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "10": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "2": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "3": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "4": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "5": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "6": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "7": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "8": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    },
+    "9": {
+      "100": "correct",
+      "101": "correct",
+      "105": "correct",
+      "106": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "110": "correct",
+      "113": "correct",
+      "116": "correct"
+    }
+  },
+  "Qwen2_5-7B-Instruct/setA": {
+    "1": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "10": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "2": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "3": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "4": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "5": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "6": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "7": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "8": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    },
+    "9": {
+      "16": "correct",
+      "22": "correct",
+      "23": "correct",
+      "26": "correct",
+      "29": "correct",
+      "37": "correct",
+      "40": "correct",
+      "44": "correct",
+      "47": "correct",
+      "50": "correct"
+    }
+  },
+  "Qwen2_5-7B-Instruct/setB": {
+    "1": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "10": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "2": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "3": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "4": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "5": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "6": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "7": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "8": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    },
+    "9": {
+      "100": "correct",
+      "101": "correct",
+      "107": "correct",
+      "108": "correct",
+      "109": "correct",
+      "113": "correct",
+      "116": "correct",
+      "117": "correct"
+    }
+  }
+}

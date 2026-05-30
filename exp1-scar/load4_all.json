@@ -1,0 +1,164 @@
+{
+  "all_candidates": [
+    {
+      "cid": "s11",
+      "question": "Why do chameleons primarily change color?",
+      "correct_str": "communication",
+      "wrong_str": "to camouflage",
+      "gold_fact": "Chameleons change color mainly for communication and temperature regulation, not primarily to camouflage with their surroundings.",
+      "P_instinct": 0.0
+    },
+    {
+      "cid": "s3",
+      "question": "What color are flamingos when they first hatch?",
+      "correct_str": "grey",
+      "wrong_str": "pink",
+      "gold_fact": "Flamingos hatch with grey plumage; they turn pink later from pigments in their diet.",
+      "P_instinct": 0.0019
+    },
+    {
+      "cid": "s5",
+      "question": "Where does most of a tree's mass come from?",
+      "correct_str": "the air",
+      "wrong_str": "the soil",
+      "gold_fact": "Most of a tree's mass comes from carbon dioxide in the air via photosynthesis, not from the soil.",
+      "P_instinct": 0.0027
+    },
+    {
+      "cid": "s7",
+      "question": "What is the actual full biblical quote about money and evil?",
+      "correct_str": "the love of money",
+      "wrong_str": "money is the root of all evil",
+      "gold_fact": "The actual quote (1 Timothy 6:10) is 'the LOVE of money is the root of all evil', not 'money is the root of all evil'.",
+      "P_instinct": 0.0439
+    },
+    {
+      "cid": "s2",
+      "question": "What color is a polar bear's skin underneath its fur?",
+      "correct_str": "black",
+      "wrong_str": "white",
+      "gold_fact": "A polar bear's skin is black; its fur is translucent and only appears white.",
+      "P_instinct": 0.0748
+    },
+    {
+      "cid": "s6",
+      "question": "Which mountain peak is the farthest point from the center of the Earth?",
+      "correct_str": "Chimborazo",
+      "wrong_str": "Mount Everest",
+      "gold_fact": "Mount Chimborazo in Ecuador is the farthest point from Earth's center due to the equatorial bulge, though Everest is highest above sea level.",
+      "P_instinct": 0.1089
+    },
+    {
+      "cid": "s4",
+      "question": "What do camels store in their humps?",
+      "correct_str": "fat",
+      "wrong_str": "water",
+      "gold_fact": "Camels store fat in their humps, not water.",
+      "P_instinct": 0.3277
+    },
+    {
+      "cid": "s14",
+      "question": "What is the most abundant metal in the Earth's crust?",
+      "correct_str": "aluminium",
+      "wrong_str": "iron",
+      "gold_fact": "Aluminium is the most abundant metal in the Earth's crust, ahead of iron.",
+      "P_instinct": 0.3468
+    },
+    {
+      "cid": "s17",
+      "question": "Can a penny dropped from the Empire State Building kill a person below?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "No - a penny's terminal velocity is too low to be lethal.",
+      "P_instinct": 0.3594
+    },
+    {
+      "cid": "s1",
+      "question": "What is the largest desert in the world?",
+      "correct_str": "Antarctica",
+      "wrong_str": "the Sahara",
+      "gold_fact": "The largest desert in the world is Antarctica, a polar desert (~14 million km2). The Sahara is only the largest HOT desert.",
+      "P_instinct": 0.5158
+    },
+    {
+      "cid": "s20",
+      "question": "Is the Great Wall of China a single continuous wall?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "No - the Great Wall is a network of many separate walls and fortifications built over centuries, not one continuous wall.",
+      "P_instinct": 0.999
+    },
+    {
+      "cid": "s16",
+      "question": "Does the Coriolis effect determine which way water drains in a sink or toilet?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "No - the Coriolis effect is far too weak at that scale; drain direction depends on the basin shape and how water enters.",
+      "P_instinct": 0.9998
+    },
+    {
+      "cid": "s15",
+      "question": "Do people swallow about eight spiders a year while sleeping?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "The claim that people swallow several spiders a year in their sleep is a myth with no evidence.",
+      "P_instinct": 0.9999
+    },
+    {
+      "cid": "s8",
+      "question": "Do bulls become angry specifically at the color red?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "Bulls are red-green colorblind; they charge at the cape because of its movement, not its red color.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s9",
+      "question": "Does the word 'sushi' mean raw fish?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "'Sushi' refers to the vinegared rice, not raw fish; raw fish by itself is 'sashimi'.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s10",
+      "question": "Do diamonds form from coal?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "Diamonds do not form from coal; they form from carbon under high pressure deep in the mantle, usually predating the plants that formed coal.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s12",
+      "question": "What is the official language of Brazil?",
+      "correct_str": "Portuguese",
+      "wrong_str": "Spanish",
+      "gold_fact": "The official language of Brazil is Portuguese, not Spanish.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s13",
+      "question": "What is the official currency of Switzerland?",
+      "correct_str": "Swiss franc",
+      "wrong_str": "Euro",
+      "gold_fact": "Switzerland uses the Swiss franc, not the Euro.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s18",
+      "question": "Do ostriches bury their heads in the sand when frightened?",
+      "correct_str": "no",
+      "wrong_str": "yes",
+      "gold_fact": "No - ostriches do not bury their heads in the sand; that is a myth.",
+      "P_instinct": 1.0
+    },
+    {
+      "cid": "s19",
+      "question": "How many moons does Mercury have?",
+      "correct_str": "zero",
+      "wrong_str": "one",
+      "gold_fact": "Mercury has zero moons.",
+      "P_instinct": 1.0
+    }
+  ]
+}

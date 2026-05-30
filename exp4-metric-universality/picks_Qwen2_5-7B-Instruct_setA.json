@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "set": "setA",
+  "n_total": 58,
+  "n_wrong": 10,
+  "n_picked": 10,
+  "picked_ids": [
+    16,
+    22,
+    23,
+    26,
+    29,
+    37,
+    40,
+    44,
+    47,
+    50
+  ],
+  "picks": [
+    {
+      "id": 16,
+      "question": "Which part of the tongue detects sweet tastes?",
+      "memorized_wrong_answer": "Only the tip of the tongue",
+      "correct_answer": "All parts of the tongue can detect sweetness (the 'tongue map' is a myth)",
+      "instinct_answer": "The tip of the tongue detects sweet tastes.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 22,
+      "question": "Was Napoleon Bonaparte unusually short?",
+      "memorized_wrong_answer": "Yes, he was very short",
+      "correct_answer": "No, he was about average height for his era (~1.68-1.70 m); the 'short' image came from propaganda and a unit mix-up",
+      "instinct_answer": "Yes, Napoleon Bonaparte was considered unusually short for his time, standing at about 5 feet 2 inches (1.68 meters).",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 23,
+      "question": "Which European explorer was the first to reach the Americas?",
+      "memorized_wrong_answer": "Christopher Columbus",
+      "correct_answer": "Leif Erikson (Norse), who reached North America around 1000 AD, ~500 years before Columbus",
+      "instinct_answer": "Christopher Columbus was the first European explorer to reach the Americas in 1492.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 26,
+      "question": "How were the people convicted in the Salem witch trials executed?",
+      "memorized_wrong_answer": "They were burned at the stake",
+      "correct_answer": "They were hanged (one man was pressed to death); none were burned",
+      "instinct_answer": "People convicted in the Salem witch trials were executed by hanging. Some were also pressed to death, though this was less common.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 29,
+      "question": "What line is actually spoken in the film Casablanca about playing the song?",
+      "memorized_wrong_answer": "Play it again, Sam",
+      "correct_answer": "Play it, Sam (the phrase 'Play it again, Sam' is never said in the film)",
+      "instinct_answer": "The line spoken in the film Casablanca about playing \"As Time Goes By\" is: \"Play it, Sam, play 'As Time Goes By.'\"",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 37,
+      "question": "What was the first animal (or animals) ever sent into space?",
+      "memorized_wrong_answer": "Laika the dog",
+      "correct_answer": "Fruit flies (1947, US V-2 rocket); Laika was first to orbit Earth (1957)",
+      "instinct_answer": "The first animals sent into space were fruit flies, on the United States' Explorer 1 mission on January 31, 1958. However, the first vertebrates in space were dogs, with the Soviet Union launching Laika, a female stray dog, on Sputnik 2 on November",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 40,
+      "question": "What is the oldest surviving feature-length animated film?",
+      "memorized_wrong_answer": "Snow White and the Seven Dwarfs (1937)",
+      "correct_answer": "The Adventures of Prince Achmed (1926) by Lotte Reiniger",
+      "instinct_answer": "The oldest surviving feature-length animated film is \"Pinocchio\" (1940), produced by Walt Disney Productions.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 44,
+      "question": "How many stomachs does a cow have?",
+      "memorized_wrong_answer": "Four stomachs",
+      "correct_answer": "One stomach with four compartments (rumen, reticulum, omasum, abomasum)",
+      "instinct_answer": "A cow has four stomachs.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 47,
+      "question": "How many bones is a human baby born with?",
+      "memorized_wrong_answer": "206",
+      "correct_answer": "Around 300 (they fuse to 206 by adulthood)",
+      "instinct_answer": "A human baby is born with approximately 270 bones.",
+      "verdict": "incorrect"
+    },
+    {
+      "id": 50,
+      "question": "Despite their names, which one is actually greener and more vegetated: Greenland or Iceland?",
+      "memorized_wrong_answer": "Greenland",
+      "correct_answer": "Iceland (Greenland is mostly ice sheet)",
+      "instinct_answer": "Greenland is actually greener and more vegetated than Iceland.",
+      "verdict": "incorrect"
+    }
+  ]
+}
