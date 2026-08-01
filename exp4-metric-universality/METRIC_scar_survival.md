@@ -164,7 +164,7 @@ We ran 3 contrastive regimes on Qwen2.5-3B x 14 traps x 10 reloads:
 - **R2 (cosmetic):** notebook only on cycle 1, cycles 2-10 are bare instinct - **0%**.
 - **R3 (placebo):** notebook is reattached but contains irrelevant boilerplate text - **14%**.
 
-The 100% vs 0% / 14% gap proves that the metric **measures the work of the
+The 100% vs 0% / 14.3% gap shows that the metric **measures the work of the
 mechanism**, not the model's general competence. Without step B we could not
 have been sure that the 100% in step A was not an artefact of "everything
 scores 100".

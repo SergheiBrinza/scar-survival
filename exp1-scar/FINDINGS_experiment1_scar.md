@@ -86,7 +86,7 @@ Why: with frozen weights + an external mechanism + deterministic decoding,
 reload restores an identical state. The scar is real, not cosmetic.
 
 ### Wear stress-test — 4 loads
-We probed not resilience to reload (already proven), but survival of the override under pressure on the notebook.
+We probed not resilience to reload (already shown), but survival of the override under pressure on the notebook.
 
 | Load | Survival | Verdict |
 |---|---|---|
@@ -104,7 +104,8 @@ on two traps Gain even went negative.
 
 ## 4. Main conclusion
 
-Survival is 100% under reload, ballast, and stochastic decoding; it drops to ~50% under a noisy notebook.
+Survival is 100% under reload and stochastic decoding, and 93% under ballast (13/14 at every
+non-zero ballast level — only trap #16 falls); it drops to ~50% under a noisy notebook.
 
 The cause is in the nature of the mechanism: it is blind to truth. Contrastive does not "understand"
 where truth lies — it merely amplifies what the notebook adds on top of the instinct. If a convincing
