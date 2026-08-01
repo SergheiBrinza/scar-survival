@@ -8,7 +8,7 @@ A metric (**scar-survival rate**) for whether a correction to a frozen LLM survi
 
 * `exp1-scar/` — the original mechanism: frozen Qwen2.5-3B + per-fact authoritative notebook + CK-PLUG/DeCK-style contrastive decoding. 10 reload cycles, 14 working trap-facts; introduces the metric and runs a 4-load stress test (ballast, noise, stochasticity, sticky instincts).
 * `exp4-metric-universality/` — Step A of metric validation: replay protocol on 3 models (Qwen2.5-3B, Qwen2.5-7B, Phi-3.5-mini) x 2 fact sets (58 misconceptions, 20 geo/records). 540 answers, 100% in every cell.
-* `exp5-metric-discrimination/` — Step B of metric validation: three regimes (real scar / cosmetic / placebo) confirm the metric returns LOW scores on fake setups (100% / 0% / 14%), so the metric tracks the mechanism rather than the model's general competence.
+* `exp5-metric-discrimination/` — Step B of metric validation: three regimes (real scar / cosmetic / placebo) confirm the metric returns LOW scores on fake setups (100% / 0% / 14.3%), so the metric tracks the mechanism rather than the model's general competence.
 
 ## The wider series
 
