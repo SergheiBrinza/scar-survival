@@ -52,32 +52,32 @@ Interactive result viewers:
 \begin{abstract}
 A frozen language model that has memorized a wrong fact repeats it even when the
 correct fact is placed in its context. We study whether such an error can be
-corrected \emph{durably} (so that the correction survives a full process
-reload of the model) without touching a single weight. We introduce the
-\textbf{\scar{}}: the fraction of ``trap'' facts on which an external correction
-mechanism keeps beating the model's memorized instinct after $N$ full reloads.
-On a frozen Qwen2.5-3B-Instruct subject with an independent Qwen2.5-7B-Instruct
-judge, a per-fact authoritative notebook combined with contrastive decoding
-turns $0/14$ correct answers into $14/14$ and holds them at 100\% across ten
-reloads and under stochastic-decoding stress, and at 92.9\% under up to $+500$
-entries of notebook ballast. The mechanism has one
-sharp failure mode: it is \emph{blind to truth}. A single plausible lie placed
-next to the truth in the notebook drives survival down to 50\%. We show that a
-gatekeeper built from a same-family model cannot close this gap (it inherits the
-subject's blind spots, ceiling 64.3\%), whereas a gatekeeper grounded in a real
-external source (live Wikipedia) plus targeted retrieval engineering restores
-survival to 100\%. We validate that the metric ports across three models and two
-fact domains (100\% in all six cells, 540 answers) and that it discriminates a
-real correction from cosmetic and placebo variants (100\% / 0\% / 14.3\%).
-Finally, we probe the opposite bound (how rarely external truth can arrive
-before a self-calibrating system drifts) using a frozen forecaster with
-per-topic Beta calibration over 1{,}646 resolved ForecastBench questions swept
-across eleven feedback schedules; the collapse is binary, with any finite
-contact (down to once a year) holding and only zero contact failing. We frame
-the whole arc through Tarski's undefinability of truth: a model cannot certify
-its own truthfulness from within, and neither can its copy; a criterion of truth
-must be supplied from outside. Throughout, we are explicit about the extent to
-which the headline 100\% figures are a consequence of a deterministic setup.
+corrected \emph{durably} --- surviving a full process reload --- without
+touching a single weight, and where the criterion of truth for such a correction
+must live. We introduce the \textbf{\scar{}}: the fraction of trap facts on
+which an external correction mechanism keeps beating the model's memorized
+instinct across $N$ full reloads, scored by an independent semantic judge over
+the generated answer. On a frozen Qwen2.5-3B-Instruct subject, a per-fact
+notebook with contrastive decoding turns $0/14$ correct answers into $14/14$ and
+holds them across ten reloads --- 100\% under a deliberately deterministic setup
+(frozen weights, static notebook, greedy decoding) --- and under
+stochastic-decoding stress (700 samples at temperature 0.7), with 92.9\% under
+$+500$ entries of notebook ballast. The mechanism has one sharp failure mode: it
+is \emph{blind to truth}. A single plausible lie placed next to the truth halves
+survival to 50\%. A gatekeeper built from a same-family model cannot close the
+gap --- it inherits the subject's blind spots and caps at 64.3\%, exactly its
+own accuracy --- whereas a gatekeeper grounded in live Wikipedia plus targeted
+retrieval engineering restores 92.9\% ($13/14$), and 100\% once one genuinely
+ambiguous trap is disambiguated. The metric ports across three models and two
+fact domains (100\% in all six cells, 540 answers) and discriminates a real
+correction from cosmetic and placebo variants (100\% / 0\% / 14.3\%). A separate
+probe asks the opposite question --- how rarely external truth can arrive before
+a self-calibrating frozen forecaster drifts --- over 1{,}646 resolved
+ForecastBench questions and eleven reveal schedules: any finite contact holds;
+only zero contact fails. We read the whole arc through Tarski's undefinability
+of truth as an organizing analogy: neither the subject nor its same-family copy
+can supply a working criterion of truth; a properly integrated external source
+can.
 \end{abstract}
 
 % ---------------------------------------------------------------------------
