@@ -532,11 +532,14 @@ competent forecaster.
 \paragraph{The collapse is binary.} Sweeping the reveal schedule
 (Table~\ref{tab:sweep}, Figure~\ref{fig:thin}), all ten \emph{finite} schedules,
 from daily down to once a year, land in hold-out Brier $[0.205,0.220]$.
-Only ``never'' collapses to $0.298$, bit-for-bit the raw 3B baseline. Channel
-thickness is set by the total volume of signal that passes through the channel
-over the system's lifetime, not by the frequency at which it arrives: a single
-annual debrief that flushes the whole backlog is equivalent to a daily
-drip-feed, when the calibration carries only 9 topics at $K=10$.
+Only ``never'' collapses to $0.298$, bit-for-bit the raw 3B baseline. Neither
+frequency nor delivered volume is the binding constraint in this regime. The
+270-day schedule delivers 220 resolutions and reaches Brier $0.216$; the daily
+schedule delivers 1{,}316 and reaches $0.205$. A six-fold difference in
+delivered signal moves the score by $0.011$, while the gap between any finite
+schedule and no contact at all is $0.08$ to $0.09$. With 9 topics at $K=10$ the
+calibration saturates after a few hundred resolutions, so the experiment
+separates contact from no contact and says nothing finer.
 
 \begin{table}[t]
 \centering
@@ -560,6 +563,16 @@ year      & 365 & 0.220 & 417 \\
 \textbf{never} & --- & \textbf{0.298} & 0 \\
 \bottomrule
 \end{tabular}
+
+\parbox{0.92\linewidth}{\footnotesize Total revealed is not monotone in the
+period. Reveals fire on days that are multiples of the period within a fixed
+535-day window, so the last effective reveal falls on day 360 for the 180-day
+schedule, day 270 for the 270-day schedule, and day 365 for the 365-day
+schedule; resolutions still pending when the window closes are never delivered.
+Because no question resolves between days 361 and 365, the 180-day and 365-day
+schedules deliver the same 417 resolutions, while the 270-day schedule delivers
+only 220. The column reports how much signal reached the calibrator inside the
+simulated window, not how often the schedule fires.}
 \end{table}
 
 \begin{figure}[t]
@@ -612,9 +625,10 @@ its survival. Neither the model nor a same-family copy can supply the missing
 truth criterion; a real external source can, provided its retrieval operating
 point is engineered rather than merely ``strengthened.'' The \scar{} metric ports
 across models and domains and discriminates real corrections from cosmetic and
-placebo ones. And when external truth is the healing agent, its required
-frequency is governed by total lifetime signal volume, not arrival rate: any
-finite contact holds, only zero contact fails. Across all three parts the same
+placebo ones. And when external truth is the healing agent, the low-capacity
+calibrator used here saturates after a few hundred resolutions: within that
+regime neither arrival rate nor delivered volume separates the schedules, and
+only zero contact fails. Across all three parts the same
 wall recurs (a system cannot certify its own truth from inside), and the same
 key opens it: a criterion supplied from outside.
 
