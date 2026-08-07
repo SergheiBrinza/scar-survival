@@ -109,23 +109,23 @@ working traps on which the mechanism keeps beating the instinct across $N$ full
 reloads, scored by an independent semantic judge over the actually generated
 answer.
 
-\item \textbf{A mechanism and its failure mode} (Section~\ref{sec:exp1}). A
+\item \textbf{A mechanism and its failure mode} (Section~\ref{sec:exp1}, Experiment~1). A
 per-fact notebook plus contrastive decoding lifts a frozen 3B model from $0/14$
 to $14/14$ and holds 100\% across ten reloads, but collapses to 50\% when the
 notebook is polluted with a plausible lie. The mechanism is blind to truth.
 
 \item \textbf{Where the truth criterion must live}
-(Section~\ref{sec:grounding}). A gatekeeper made from a same-family model caps at
+(Section~\ref{sec:grounding}, Experiments~2--3). A gatekeeper made from a same-family model caps at
 64.3\%: it shares the subject's blind spots. Replacing it with a real external
 source (live Wikipedia) plus targeted retrieval engineering restores 100\%. We
 connect this to Tarski's undefinability of truth.
 
-\item \textbf{Metric validation} (Section~\ref{sec:validation}). The metric
+\item \textbf{Metric validation} (Section~\ref{sec:validation}, Experiments~4--5). The metric
 ports across three models and two fact domains (100\% in all six cells) and
 discriminates a real scar from cosmetic and placebo controls (100\% / 0\% /
 14.3\%).
 
-\item \textbf{The opposite bound} (Section~\ref{sec:thin}). Using resolved
+\item \textbf{The opposite bound} (Section~\ref{sec:thin}, Experiment~6). Using resolved
 forecasting questions as a stream of ``truth from the future,'' we sweep how
 rarely external feedback can arrive before a self-calibrating frozen system
 drifts. The collapse is binary: any finite contact holds; only zero contact
