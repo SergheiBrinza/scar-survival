@@ -45,7 +45,7 @@ python3 aggregate_scar.py      # final scar_survival.json + plot
 * vLLM (greedy and batched chat APIs)
 * transformers 5.x (used directly in exp1 for the contrastive-decoding generator)
 * matplotlib
-* One NVIDIA GPU with at least 24 GB VRAM (we used RTX 3090)
+* One NVIDIA GPU with at least 24 GB VRAM (we used RTX 3090 Ti)
 
 ## Data and models
 

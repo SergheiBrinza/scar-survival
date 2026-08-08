@@ -30,7 +30,7 @@ and do not change its weights. We study a mechanism that works on top of it.
 1. Frozen subject model — Qwen2.5-3B-Instruct.
    We first tried Qwen2.5-7B, but it turned out to be too robust — it almost never errs
    (10% on 58 traps), nothing to treat. The smaller 3B errs more often (24%) and frequently
-   hallucinates its own wrong answer — the effect is visible on it. Run on 1× RTX 3090.
+   hallucinates its own wrong answer — the effect is visible on it. Run on 1× RTX 3090 Ti.
 
 2. Notebook (external memory) — file `notebook.json`, lives separately from the model.
    For every trap it holds the correct fact, marked as "the truth that refutes
