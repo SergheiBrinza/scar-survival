@@ -25,7 +25,7 @@ Models needed from Hugging Face:
 - `Qwen/Qwen2.5-3B-Instruct` (subject under test)
 - `Qwen/Qwen2.5-7B-Instruct` (judge)
 
-Pipeline (1x RTX 3090, approx. 60-90 min total):
+Pipeline (1x RTX 3090 Ti, approx. 60-90 min total):
 
 ```bash
 # 30 cycles: 3 regimes x 10 cycles, full model reload each
