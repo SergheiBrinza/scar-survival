@@ -53,7 +53,16 @@ See `DATA.md` for the HuggingFace models required and how to fetch them.
 
 ## Citation
 
-Citation entry to be added before publication.
+```bibtex
+@misc{brinza2026secondloop,
+  author       = {Brinza, Serghei},
+  title        = {The Second Loop: Durable Correction of Memorized Errors in Frozen Language Models},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.21845022},
+  url          = {https://doi.org/10.5281/zenodo.21845022}
+}
+```
 
 ## License
 
