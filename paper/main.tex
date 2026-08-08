@@ -62,7 +62,7 @@ notebook with contrastive decoding turns $0/14$ correct answers into $14/14$ and
 holds them across ten reloads --- 100\% under a deliberately deterministic setup
 (frozen weights, static notebook, greedy decoding) --- and under
 stochastic-decoding stress (700 samples at temperature 0.7), with 92.9\% under
-$+500$ entries of notebook ballast. The mechanism has one sharp failure mode: it
+up to $+500$ entries of notebook ballast. The mechanism has one sharp failure mode: it
 is \emph{blind to truth}. A single plausible lie placed next to the truth halves
 survival to 50\%. A gatekeeper built from a same-family model cannot close the
 gap --- it inherits the subject's blind spots and caps at 64.3\%, exactly its
