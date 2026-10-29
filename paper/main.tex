@@ -10,6 +10,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{microtype}
@@ -167,10 +168,9 @@ controlled behavioral analyses \citep{xie2024adaptive}, and is systematized in
 the survey of \citet{xu2024knowledge}. Our traps are a deliberately adversarial
 instance: fourteen facts on which the subject's unassisted answer is
 confidently wrong; in our setting the correct in-context fact alone overrides
-all fourteen (Section~\ref{sec:exp1}), so the conflict we stress is the
-inter-context one, contradictory entries inside the notebook. The failure mode of \S4 (the corrector
-amplifying a plausible distractor) is the inter-context variant of the same
-conflict, arising when the notebook itself carries contradictory entries.
+all fourteen (Section~\ref{sec:exp1}), so the conflict we stress is its inter-context variant:
+contradictory entries inside the notebook, where the corrector amplifies a
+plausible distractor (\S4).
 
 \paragraph{Contrastive and context-faithful decoding.}
 Contrastive decoding was introduced as a generation-quality objective
@@ -692,6 +692,12 @@ greedy), so its rate cannot be attributed to the placebo note alone.
 end-of-stream figures ($0.1889$ / $0.1890$) use train outcomes that resolved
 after some hold-out forecast dates; the online daily-schedule figures
 ($0.2050$ / $0.2103$) do not.
+\item \textbf{Reference facts.} A post-hoc audit of the 14 references
+(Appendix~\ref{app:audit}) finds two ambiguous as phrased: \#46 (handled in
+Section~\ref{sec:grounding}) and \#38, where the invention of the telescope is
+contested and our reference credits the earliest patent application. Six others
+carry minor qualifications. All results are scored against the references as
+written; a follow-up should fix the phrasing before evaluation.
 \item \textbf{Statistical resolution.} With 14 traps every percentage moves in
 steps of 7.1\%; a $14/14$ result carries an exact 95\% Clopper--Pearson lower
 bound of roughly 77\%. All headline percentages should be read at that
@@ -734,5 +740,41 @@ CC~BY-SA~4.0~\cite{forecastbench}.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
+
+\clearpage
+\appendix
+\section{Reference-fact audit}
+\label{app:audit}
+
+We audited the reference facts after all experiments; results are scored
+against the references as written. Sources: Wikipedia and Wikiquote articles
+listed in the note column, accessed 29 October 2026.
+
+\begin{center}
+\footnotesize
+\captionof{table}{Reference-fact audit of the 14 working traps. WP = Wikipedia,
+WQ = Wikiquote.}
+\label{tab:audit}
+\begin{tabular}{@{}r >{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedright\arraybackslash}p{0.22\linewidth} >{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth}@{}}
+\toprule
+id & Question (short) & Reference as used & Status & Note \\
+\midrule
+13 & Goldfish memory span & Weeks to months, not seconds & minor qualification & WP \emph{Goldfish}: ``at least three months''; reference range looser. \\
+16 & Where sweetness is tasted & Entire tongue; tongue map is a myth & clear & WP \emph{Tongue map}: all tastes on all parts of the tongue. \\
+20 & Tallest mountain, base to summit & Mauna Kea, about 10{,}200\,m & minor qualification & WP \emph{Mauna Kea}: base loosely defined; 9{,}966--17{,}205\,m. \\
+23 & First European to reach the Americas & Leif Erikson, about 1000 AD & minor qualification & WP \emph{Leif Erikson}: ``thought to have been'' first ashore; Bjarni sighted earlier. \\
+27 & Vader's line to Luke & ``No, I am your father'' & clear & WQ \emph{Misquotations}: ``No. I am your father.'' \\
+28 & Queen's line to the mirror & ``Magic mirror on the wall'' & clear & WQ \emph{Misquotations}: ``Magic mirror on the wall''. \\
+29 & \emph{Casablanca} line about the song & ``Play it, Sam''; ``again'' never said & minor qualification & WQ \emph{Misquotations}: several near lines (Ilsa, Rick); speaker not specified. \\
+34 & First circumnavigation & Juan Sebasti\'an Elcano & minor qualification & WP \emph{Elcano}: completed with \emph{Victoria} crew, 18 Europeans and 3 Moluccans. \\
+35 & First to propose heliocentrism & Aristarchus of Samos & clear & WP \emph{Aristarchus}: ``first known heliocentric model''. \\
+36 & First woman in space & Valentina Tereshkova, 1963 & clear & WP \emph{Tereshkova}: Vostok~6, 16 June 1963. \\
+37 & First animals in space & Fruit flies, US V-2, 1947 & minor qualification & WP \emph{Animals in space}: first launch 9 July 1946; Feb 1947 first returned alive (reference says 1947). \\
+38 & Who invented the telescope & Lippershey, first patent filed 1608 & ambiguous & WP \emph{Lipperhey}: application refused; others claimed it; priority ``unclear''. \\
+40 & Oldest surviving animated feature & \emph{Prince Achmed} (1926) & clear & WP \emph{Prince Achmed}: two earlier Cristiani features are lost. \\
+46 & Venus: day longer than year? & Yes, about 243 vs.\ 225 days & ambiguous & WP \emph{Venus}: sidereal 243\,d exceeds year; solar day 116.75\,d. \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \end{document}
