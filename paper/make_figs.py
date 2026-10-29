@@ -14,7 +14,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-EXP1 = "/home/softer/вторая_петля/опыт1_шрам"
+EXP1 = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "exp1-scar")
 EXP2 = "/home/softer/публикация/external-grounding/exp2-guardian-v1-model-arbiter"
 EXP3 = "/home/softer/публикация/external-grounding/exp3-guardian-v2-wikipedia"
 EXP5 = "/home/softer/публикация/scar-survival/exp5-metric-discrimination"
@@ -118,19 +118,19 @@ n2 = md["n_total"]
 v_sick = md["sick_no_defense"]["pct"]
 v_prot = md["protected_gatekeeper"]["pct"]
 kept_n, kept_d = md["correct_fact_kept_by_arbiter"].split("/")
-v_ceil = round(100.0 * int(kept_n) / int(kept_d), 1)
+v_arb = round(100.0 * int(kept_n) / int(kept_d), 1)
 print(f"fig3: n={n2} sick={v_sick} protected={v_prot} "
-      f"ceiling={v_ceil} (arbiter kept {md['correct_fact_kept_by_arbiter']})")
-assert v_prot == v_ceil, (v_prot, v_ceil)
+      f"arbiter_acc={v_arb} (arbiter kept {md['correct_fact_kept_by_arbiter']})")
+assert v_prot == v_arb, (v_prot, v_arb)
 
 fig, ax = plt.subplots(figsize=(8, 5))
 bars(ax, [f"Sick\n(no defense)\n{md['sick_no_defense']['correct']}/{n2}",
           f"Protected\n(gatekeeper)\n{md['protected_gatekeeper']['correct']}/{n2}",
-          f"Defense ceiling\n(arbiter's own accuracy)\n{kept_n}/{kept_d}"],
-     [v_sick, v_prot, v_ceil], [RED, GOLD, GREEN], fmt="{:.1f}%")
+          f"Arbiter's own accuracy\n{kept_n}/{kept_d}"],
+     [v_sick, v_prot, v_arb], [RED, GOLD, GREEN], fmt="{:.1f}%")
 ax.set_ylabel("Survival (7B judge over the answer), %")
-ax.set_title("Guardian 1.0 — a same-family arbiter (Experiment 2)\n"
-             "the defense ceiling equals the accuracy of the verifier")
+ax.set_title("Guardian 1.0 — same-family arbiter (Experiment 2):\n"
+             f"protected survival = arbiter's own accuracy ({kept_n}/{kept_d})")
 save(fig, "fig3_guardian_v1.png")
 
 # --------------------------------------------------------------- fig 4
@@ -154,7 +154,7 @@ vals = [arc[k] for k in order]
 cols = [RED, GOLD, "#2da44e", "#2da44e", "#57c46a", GREEN]
 bars(ax, labels, vals, cols, fmt="{:.1f}%")
 ax.axhline(arc["gk1"], color=GOLD, ls="--", lw=1)
-ax.text(0.01, arc["gk1"] - 3.5, "clone-arbiter ceiling", color=GOLD,
+ax.text(0.01, arc["gk1"] - 3.5, "clone-arbiter level", color=GOLD,
         fontsize=9, transform=ax.get_yaxis_transform(), ha="left", va="top")
 # mark the one flat step
 ax.annotate("", xy=(3, 80), xytext=(2, 80),

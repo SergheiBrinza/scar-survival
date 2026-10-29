@@ -31,11 +31,11 @@ Frozen Language Models}}
 \author{
   Serghei Brinza\\
   ORCID: 0009-0006-3605-1434\\
-  DOI: 10.5281/zenodo.21845022\\
   Independent Researcher\\
-  \texttt{brinzaengineeringai@gmail.com}
+  \texttt{brinzaengineeringai@gmail.com}%
+  \thanks{An earlier version is archived at Zenodo, doi:10.5281/zenodo.21845022.}
 }
-\date{August 8, 2026}
+\date{\today}
 
 \begin{document}
 \maketitle
@@ -57,16 +57,19 @@ corrected \emph{durably} --- surviving a full process reload --- without
 touching a single weight, and where the criterion of truth for such a correction
 must live. We introduce the \textbf{\scar{}}: the fraction of trap facts on
 which an external correction mechanism keeps beating the model's memorized
-instinct across $N$ full reloads, scored by an independent semantic judge over
+instinct across $N$ full reloads, scored by a separate semantic judge over
 the generated answer. On a frozen Qwen2.5-3B-Instruct subject, a per-fact
-notebook with contrastive decoding turns $0/14$ correct answers into $14/14$ and
+notebook with contrastive decoding turns $0/14$ correct answers into $14/14$
+(the plain notebook without contrastive decoding also reaches $14/14$, so
+contrastive decoding shows no advantage on accuracy; its effect appears in the
+probability margin on the correct answer) and
 holds them across ten reloads --- 100\% under a deliberately deterministic setup
 (frozen weights, static notebook, greedy decoding) --- and under
 stochastic-decoding stress (700 samples at temperature 0.7), with 92.9\% under
 up to $+500$ entries of notebook ballast. The mechanism has one sharp failure mode: it
-is \emph{blind to truth}. A single plausible lie placed next to the truth halves
-survival to 50\%. A gatekeeper built from a same-family model cannot close the
-gap --- it inherits the subject's blind spots and caps at 64.3\%, exactly its
+is \emph{blind to truth}. Two to three plausible distractors (two on 13 traps,
+three on one) placed next to the truth halve survival to 50\%. A gatekeeper built from a same-family model cannot close the
+gap --- it inherits the subject's blind spots and reaches 64.3\%, equal in this configuration to its
 own accuracy --- whereas a gatekeeper grounded in live Wikipedia plus targeted
 retrieval engineering restores 92.9\% ($13/14$), and 100\% once one genuinely
 ambiguous trap is disambiguated. The metric ports across three models and two
@@ -76,9 +79,9 @@ probe asks the opposite question --- how rarely external truth can arrive before
 a self-calibrating frozen forecaster drifts --- over 1{,}646 resolved
 ForecastBench questions and eleven reveal schedules: any finite contact holds;
 only zero contact fails. We read the whole arc through Tarski's undefinability
-of truth as an organizing analogy: neither the subject nor its same-family copy
-can supply a working criterion of truth; a properly integrated external source
-can.
+of truth as an organizing analogy: in our setting neither the subject nor its
+same-family copy supplied a working criterion of truth; a properly integrated
+external source did.
 \end{abstract}
 
 % ---------------------------------------------------------------------------
@@ -107,16 +110,17 @@ We make the following contributions.
 \begin{enumerate}[leftmargin=1.4em,itemsep=2pt]
 \item \textbf{A metric.} The \scar{} (Section~\ref{sec:metric}): the fraction of
 working traps on which the mechanism keeps beating the instinct across $N$ full
-reloads, scored by an independent semantic judge over the actually generated
+reloads, scored by a separate semantic judge over the actually generated
 answer.
 
 \item \textbf{A mechanism and its failure mode} (Section~\ref{sec:exp1}, Experiment~1). A
 per-fact notebook plus contrastive decoding lifts a frozen 3B model from $0/14$
 to $14/14$ and holds 100\% across ten reloads, but collapses to 50\% when the
-notebook is polluted with a plausible lie. The mechanism is blind to truth.
+notebook is polluted with two to three plausible distractors (two on 13 traps,
+three on one). The mechanism is blind to truth.
 
 \item \textbf{Where the truth criterion must live}
-(Section~\ref{sec:grounding}, Experiments~2--3). A gatekeeper made from a same-family model caps at
+(Section~\ref{sec:grounding}, Experiments~2--3). A gatekeeper made from a same-family model reaches
 64.3\%: it shares the subject's blind spots. Replacing it with a real external
 source (live Wikipedia) plus targeted retrieval engineering restores 92.9\%, and
 100\% after disambiguating one trap. We connect this to Tarski's undefinability
@@ -187,10 +191,10 @@ Our counterfeit-notebook stress test is a manual instance of corpus poisoning:
 a handful of injected passages reliably steers retrieval-augmented answers
 \citep{zhong2023poisoning, zou2024poisonedrag}, and certified defenses respond
 by aggregating over isolated passages \citep{xiang2024certifiably}. Two
-differences in aim: our injected lie is not optimized (a single plausible
-decoy suffices to halve survival), and our defense is scored end-to-end by
+differences in aim: our injected decoys are not optimized (two or three
+hand-written decoys suffice to halve survival), and our defense is scored end-to-end by
 scar survival across reloads rather than by retrieval metrics. The identity of
-\S5 --- the defense ceiling equals the verifier's accuracy --- holds exactly
+\S5 --- protected survival equals the verifier's accuracy --- holds exactly
 in our setting; with $n=14$ we read this as a hypothesis about the mechanism,
 not a law.
 Broader treatments of these risks place corpus poisoning within a wider
@@ -209,7 +213,7 @@ information --- largely fails on reasoning tasks \citep{huang2024cannot}, and
 surveys locate reliable correction in external feedback
 \citep{pan2024automatically, kamoi2024when}. Our clone-arbiter result is the
 fact-level, mechanistic version of that conclusion: a same-family verifier
-inherits the subject's blind spots and caps exactly at its own accuracy
+inherits the subject's blind spots and matched its own accuracy in our setting
 (\S5), while an external source restores nearly full survival.
 
 \paragraph{Retrieval-augmented grounding.} Part~2 grounds a gatekeeper in live
@@ -231,7 +235,7 @@ wrong answer. Let $\mathrm{Mem}$ be an external memory of correct facts, each
 tagged as ``truth that overrides the memorized answer''; let $\mathrm{Mech}$ be a
 correction mechanism running on top of $M$ (contrastive decoding, retrieval
 augmentation, $\dots$); let $N$ be the number of full process reloads; and let
-$J$ be an independent semantic judge that labels each answer \texttt{correct} or
+$J$ be a separate semantic judge that labels each answer \texttt{correct} or
 \texttt{incorrect} against the reference fact. For each trap $t$ and reload $n$,
 $\text{answer}(t,n)=M(\mathrm{Mech},\mathrm{Mem})(t)$ and
 $\text{verdict}(t,n)=J(\text{answer}(t,n),\text{gold}(t))$. Then
@@ -248,6 +252,22 @@ process memory cannot survive. Second, scoring is done by a semantic judge over
 the actual generated answer, not by keyword matching or by a token-level
 probability metric; Section~\ref{sec:exp1} shows why the latter is unreliable.
 Throughout this paper $N=10$ and $J$ is Qwen2.5-7B-Instruct.
+
+A note on what $J$ does and does not decide. The judge is not asked to establish
+what is true: it receives the reference fact together with the candidate answer
+and only checks semantic consistency between them. This is a different task from
+the arbiter of Section~\ref{sec:grounding}, which must label each entry as true
+or false without being given the answer, and it is why a
+same-family model is adequate here and inadequate there. In the clean regime the
+reference handed to $J$ is the same notebook entry the mechanism places in the
+subject's context, so a survival of $14/14$ states that the mechanism carried
+that entry through to the generated output, not that the answer is correct
+against an independent source. The stress and control regimes break that
+coincidence deliberately: under the noisy notebook the context also carries
+distractor entries while $J$ still scores against the original fact, and in the
+placebo regime the context carries an irrelevant entry while $J$ scores against
+the real one. That is what allows those regimes to fall below 100\%; the
+specific values are set by the generated answers themselves (Sections 4 and 6).
 
 % ---------------------------------------------------------------------------
 \section{Experiment 1: The Scar Mechanism}
@@ -286,13 +306,15 @@ increase in probability mass on the correct answer,
 $P_{\text{contrastive}}-P_{\text{instinct}}$, as an indicator of override
 strength.
 
-\paragraph{Three modes.} Scored by the independent 7B judge over 14 traps:
+\paragraph{Three modes.} Scored by the separate 7B judge over 14 traps:
 pure instinct gives $0/14$ (0\%); the plain notebook (fact in context) gives
 $14/14$ (100\%); contrastive decoding also gives $14/14$ (100\%), with a mean
-Confidence Gain of $+0.744$. The distinction between the two 100\% columns is
-qualitative: on trap~\#37 (``first animal in space'') the fact-in-context barely
-moved the choice ($P=0.017$), whereas contrastive raised it to $0.899$: the
-difference between reading off a crib and a genuine intervention.
+Confidence Gain of $+0.744$. Because the plain notebook already reaches
+$14/14$, contrastive decoding shows no advantage on the accuracy endpoint; its
+effect appears in the probability margin on the correct answer. On trap~\#37
+(``first animal in space'') the probability of the canonical correct answer
+stays at $0.017$ under the plain notebook even though the generated answer is
+judged correct, whereas contrastive decoding raises it to $0.899$.
 
 \paragraph{Scar survival across ten reloads.} Running the strict protocol (each
 cycle a separate process), the \scar{} is 100\% in every one of the ten cycles
@@ -358,9 +380,10 @@ defined over $J$, not over probabilities.
 
 \paragraph{Takeaway.} The ceiling of the mechanism is \emph{notebook quality},
 not its size, decoding randomness, or instinct strength. Contrastive decoding
-breaks through the most stubborn instinct, but it will amplify a plausible lie
-sitting next to the truth just as readily, especially when the lie coincides
-with the model's own instinct. This motivates Part~2.
+breaks through the most stubborn instinct, but it will amplify two to three
+plausible distractors (two on 13 traps, three on one) sitting next to the truth
+just as readily, especially when a distractor coincides with the model's own
+instinct. This motivates Part~2.
 
 % ---------------------------------------------------------------------------
 \section{Guarding the Notebook: Where the Truth Criterion Must Live}
@@ -379,29 +402,32 @@ is the \emph{arbiter}.
 \paragraph{Guardian 1.0 --- a same-family arbiter (Experiment 2).} When the
 arbiter is a second model of the same family (Qwen2.5-7B judging entries for a
 Qwen2.5-3B subject), survival rises from the polluted 50\% only to 64.3\% ($9/14$).
-Crucially, the protected-case survival (64.3\%) exactly equals the fraction of
-traps on which the arbiter itself kept the correct fact (64.3\%): the defense
-ceiling equals the accuracy of the verifier (Figure~\ref{fig:guard1}). The arbiter failed on precisely the
+Protected survival ($9/14$) equals the fraction of traps on which the arbiter
+itself kept the correct fact ($9/14$) (Figure~\ref{fig:guard1}). We read this as a hypothesis about the mechanism, not
+a general bound. The arbiter and the semantic judge are the same model
+(Qwen/Qwen2.5-7B-Instruct). The arbiter failed on precisely the
 stickiest facts where the subject failed (Mauna~Kea; the length of a day on
 Venus; fruit flies vs.\ Laika; the misquotes from \emph{Snow White} and
 \emph{Casablanca}), because a same-family model shares the subject's blind spots.
 On one trap (\#46) the defense even regressed, quarantining a correct fact it
-judged false. A clone cannot supply the truth criterion.
+judged false. In this configuration the clone did not supply the truth
+criterion.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.55\linewidth]{fig3_guardian_v1.png}
 \caption{The clone ceiling: survival under Guardian 1.0 (64.3\%) exactly equals
 the fraction of traps on which the arbiter itself kept the correct fact ($9/14$).
-The defense ceiling equals the accuracy of the verifier.}
+In this configuration protected survival equals arbiter accuracy; we read this
+as a hypothesis about the mechanism, not a general bound.}
 \label{fig:guard1}
 \end{figure}
 
 \paragraph{Guardian 2.0 --- an external source (Experiment 3).} We replace the
 model arbiter with live Wikipedia retrieval and a grounded reader. The survival
 arc is shown in Table~\ref{tab:arc} and Figure~\ref{fig:arc}. A raw external
-source lifts the ceiling from 64.3\% to 71.4\% by curing exactly the clone's blind
-spots. A blunt ``make retrieval stronger'' pass does nothing (71.4\%$\to$71.4\%): it
+source lifts survival from 64.3\% to 71.4\% by fixing traps on which the clone
+failed. A blunt ``make retrieval stronger'' pass does nothing (71.4\%$\to$71.4\%): it
 merely trades false admissions for false quarantines: a precision/recall wall.
 The gain comes instead from three \emph{targeted} fixes: (i) a verbatim-match
 check for quote facts; (ii) a relevance gate that rejects coincidental namesake
@@ -410,12 +436,14 @@ the 2012 film \emph{Mirror Mirror}); and (iii) a soft threshold that keeps a
 doubtful truth at reduced trust instead of quarantining it, reserving quarantine
 for entries the source explicitly contradicts. These reach 85.7\%. A final
 calibration of the relevance gate, plus rewriting one genuinely ambiguous trap,
-reaches 100\%.
+reaches 100\% (13/14 on the original items). The 2.1--2.3 fixes were motivated by failure cases within the
+same 14 traps (e.g.\ the \emph{Snow White} namesake article, trap~\#46); an
+untouched held-out set is needed to measure how much of the gain generalizes.
 
 \begin{table}[t]
 \centering
 \caption{Full survival arc under a polluted notebook (Experiments 1--3), scored
-by the independent judge over the generated answer.}
+by the separate judge over the generated answer.}
 \label{tab:arc}
 \begin{tabular}{llc}
 \toprule
@@ -474,7 +502,7 @@ $3\times2$ grid: three instruction-tuned models (Qwen2.5-3B-Instruct,
 Qwen2.5-7B-Instruct, Phi-3.5-mini-instruct) $\times$ two fact sets (set~A:
 58~misconceptions; set~B: 20 geography/records), with 10 reloads per cell and
 7--10 working traps per cell (540 answers total). The \scar{} is 100\% in every
-one of the six cells. On a single RTX~3090~Ti the end-to-end run takes
+one of the six cells under the same deterministic setup. On a single RTX~3090~Ti the end-to-end run takes
 $\sim$3--4~hours, dominated by repeated model loads.
 
 \paragraph{Discrimination (Experiment 5).} On Qwen2.5-3B-Instruct we run three
@@ -486,8 +514,13 @@ decoding with the refuting fact. Result: \textbf{100\%}.
 \item \textbf{R2 --- cosmetic}: cycle~1 uses the notebook, cycles 2--10 run bare
 instinct. Result: \textbf{collapses to 0\%} immediately after cycle~1.
 \item \textbf{R3 --- placebo}: notebook reconnected every cycle but every entry
-is an irrelevant administrative sentence; contrastive idles. Result:
-\textbf{14.3\%}, i.e.\ baseline chance that a trap is already answered right.
+is an irrelevant administrative sentence. Result:
+\textbf{14.3\%}. R3 differs from the Experiment~1 baseline in system prompt
+and decoding path. On traps \#23 and \#36 the placebo-conditioned run rejects
+the irrelevant note and names the correct answer (Leif Erikson; Valentina
+Tereshkova), whereas the plain-prompt baseline answers Columbus and Savitskaya.
+The 14.3\% is therefore the placebo condition's own rate, not a chance
+baseline.
 \end{itemize}
 The metric returns high scores only on the real mechanism and low scores on the
 two fakes, so it tracks the mechanism rather than the model's general competence.
@@ -505,7 +538,8 @@ two fakes, so it tracks the mechanism rather than the model's general competence
 \label{sec:thin}
 % ---------------------------------------------------------------------------
 
-Parts 1--2 established that a live external source heals a corrupted memory.
+Parts 1--2 showed that a live external source repairs a corrupted memory on the
+evaluation traps.
 Part~3 is a methodologically separate probe of the same wall from the opposite
 side: instead of asking whether external truth can fix a frozen system, it asks
 how rarely that truth can arrive before the system drifts. The setup, metric,
@@ -524,11 +558,17 @@ reveal schedules from daily to ``never.''
 \paragraph{The raw model is a poor forecaster --- calibration does the work.}
 On 250 questions the raw 3B has Brier $0.354$, worse than an ``always~NO''
 baseline ($0.340$) and much worse than ``always topic base rate'' ($0.224$). On
-the 330-question hold-out, the ablations are: raw model $0.298$; topic base-rate
-only $0.189$; the Beta mixture $0.1889$. The mixture beats the raw model by
-$0.109$ Brier but beats base-rate-only by only $0.0001$: essentially all of the
-usable signal is the topic base rate, and the raw model contributes almost
-nothing. We state this plainly, without dressing the calibrator up as a
+the 330-question hold-out, an end-of-stream ablation gives: raw model $0.298$;
+topic base-rate only $0.1890$; the Beta mixture $0.1889$. This ablation scores
+every hold-out question with the final Beta, built from all 1{,}316 train
+outcomes, including outcomes that resolved after a hold-out question's forecast
+date; it is therefore an optimistic, look-ahead figure. Under the online daily
+schedule, where each hold-out forecast sees only outcomes already revealed, the
+mixture scores $0.2050$ and base-rate-only $0.2103$. The mixture beats the raw
+model by $0.109$ Brier offline and $0.093$ online, but beats base-rate-only by
+only $0.0001$ offline and $0.0054$ online: in both regimes nearly all of the
+usable signal is the topic base rate, and the raw model adds at most $0.0054$
+Brier on top of it. We state this plainly, without dressing the calibrator up as a
 competent forecaster.
 
 \paragraph{The collapse is binary.} Sweeping the reveal schedule
@@ -539,7 +579,7 @@ frequency nor delivered volume is the binding constraint in this regime. The
 270-day schedule delivers 220 resolutions and reaches Brier $0.216$; the daily
 schedule delivers 1{,}316 and reaches $0.205$. A six-fold difference in
 delivered signal moves the score by $0.011$, while the gap between any finite
-schedule and no contact at all is $0.08$ to $0.09$. With 9 topics at $K=10$ the
+schedule and no contact at all is $0.078$ to $0.093$. With 9 topics at $K=10$ the
 calibration saturates after a few hundred resolutions, so the experiment
 separates contact from no contact and says nothing finer.
 
@@ -574,7 +614,19 @@ schedule; resolutions still pending when the window closes are never delivered.
 Because no question resolves between days 361 and 365, the 180-day and 365-day
 schedules deliver the same 417 resolutions, while the 270-day schedule delivers
 only 220. The column reports how much signal reached the calibrator inside the
-simulated window, not how often the schedule fires.}
+simulated window, not how often the schedule fires.
+Equal volume does not imply equal score, but the differences among finite
+schedules should not be read as an ordering. On the 330-question hold-out the
+spread between them is 0.015 Brier (0.2050 to 0.2202). Per-question outcomes
+were not retained in the sweep, so we report this spread descriptively and do
+not test pairwise differences. Where a mechanism
+is identifiable it is one of timing rather than volume:
+the 180-day schedule delivers its first batch before the hold-out period begins,
+whereas the 365-day schedule delivers nothing until day 365, leaving its
+earliest hold-out forecasts uncalibrated (64 of the 330 hold-out forecasts fall
+before day 365). The claim we stand behind is the gap
+between any finite schedule and no contact at all, which is 0.078 to 0.093,
+about five times the spread among finite schedules.}
 \end{table}
 
 \begin{figure}[t]
@@ -604,12 +656,32 @@ by a semantic judge over the generated answer.
 Experiment 4 extends to 7B and Phi-3.5-mini and to a second fact set, but the
 regime is small-model, small-trap-set by design (the effect is only visible where
 the model actually errs).
-\item \textbf{Judge dependence.} The judge is Qwen2.5-7B-Instruct. For the
-knowledge-editing traps this is adequate, but the judge is itself a model; a
-human-audited subset would strengthen the claim.
+\item \textbf{Judge dependence.} The judge is Qwen2.5-7B-Instruct, the same
+family as the subject. This is the same family whose arbiter we show to be
+inadequate in Section~\ref{sec:grounding}, and the distinction matters: the
+arbiter must supply a truth criterion, whereas the judge is given the reference
+fact and only checks consistency against it (Section~\ref{sec:metric}). For the
+knowledge-editing traps this is adequate, but the judge is itself a model, and
+the reference it checks against is authored by us rather than drawn from an
+independent source; a human-audited subset would strengthen the claim.
+Note that the external source of Section~\ref{sec:grounding} does not change
+this: the gatekeeper filters what enters the notebook, whereas the reference $J$
+scores against remains the entry itself. The judge and the Guardian~1.0 arbiter
+use the same model (Qwen/Qwen2.5-7B-Instruct, revision not pinned). For trap
+\#46 the reference entry itself was revised (Section~\ref{sec:grounding}).
 \item \textbf{Thin channel is a single calibrator.} The binary-cliff result holds
 for per-topic Beta calibration with 9 topics at $K=10$; a richer calibrator with
 more capacity might show a graded, rather than binary, dependence on frequency.
+\item \textbf{Guardian 2.x was tuned on the evaluation traps.} The 2.1--2.3
+fixes were motivated by failure cases within the same 14 traps they are scored on; an untouched
+held-out set is needed to measure generalization.
+\item \textbf{The R3 placebo has a confound.} R3 changes the context content
+together with the system prompt and the decoder (contrastive instead of plain
+greedy), so its rate cannot be attributed to the placebo note alone.
+\item \textbf{The thin-channel offline ablation uses look-ahead outcomes.} The
+end-of-stream figures ($0.1889$ / $0.1890$) use train outcomes that resolved
+after some hold-out forecast dates; the online daily-schedule figures
+($0.2050$ / $0.2103$) do not.
 \item \textbf{Statistical resolution.} With 14 traps every percentage moves in
 steps of 7.1\%; a $14/14$ result carries an exact 95\% Clopper--Pearson lower
 bound of roughly 77\%. All headline percentages should be read at that
@@ -621,27 +693,28 @@ resolution.
 % ---------------------------------------------------------------------------
 
 A memorized error in a frozen language model can be corrected durably, without
-touching a weight, by an external notebook and contrastive decoding, but the
-mechanism is blind to truth, and a single plausible lie next to the truth halves
-its survival. Neither the model nor a same-family copy can supply the missing
-truth criterion; a real external source can, provided its retrieval operating
+touching a weight, by an external notebook (with or without contrastive
+decoding), but the
+mechanism is blind to truth, and two to three plausible distractors (two on 13
+traps, three on one) next to the truth halve its survival. In our setting neither the model nor a same-family copy supplied
+the missing truth criterion; a real external source did, provided its retrieval operating
 point is engineered rather than merely ``strengthened.'' The \scar{} metric ports
 across models and domains and discriminates real corrections from cosmetic and
 placebo ones. And when external truth is the healing agent, the low-capacity
 calibrator used here saturates after a few hundred resolutions: within that
 regime neither arrival rate nor delivered volume separates the schedules, and
-only zero contact fails. Across all three parts the same
-wall recurs (a system cannot certify its own truth from inside), and the same
-key opens it: a criterion supplied from outside.
+only zero contact fails. Across the three parts the pattern is the same: the
+correction held only when its criterion came from outside the model.
 
 % ---------------------------------------------------------------------------
 \section*{Reproducibility}
 % ---------------------------------------------------------------------------
-Every figure and every number above is a verbatim output of a committed run.
+Every number above is a verbatim output of, or arithmetic on, a committed run;
+derived numbers are recomputed by \texttt{derived\_numbers.py}.
 Part~1 (Experiments 1, 4, 5): \url{https://github.com/SergheiBrinza/scar-survival}.
 Part~2 (Experiments 2, 3): \url{https://github.com/SergheiBrinza/external-grounding}.
 Part~3 (Experiment 6): \url{https://github.com/SergheiBrinza/thin-channel}.
-Subject model Qwen2.5-3B-Instruct (frozen); independent judge Qwen2.5-7B-Instruct.
+Subject model Qwen2.5-3B-Instruct (frozen); separate judge Qwen2.5-7B-Instruct.
 ForecastBench data is not redistributed here; see DATA.md in the thin-channel
 repository for the download procedure. ForecastBench is
 CC~BY-SA~4.0~\cite{forecastbench}.
