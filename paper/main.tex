@@ -416,10 +416,9 @@ criterion.
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.55\linewidth]{fig3_guardian_v1.png}
-\caption{The clone ceiling: survival under Guardian 1.0 (64.3\%) exactly equals
-the fraction of traps on which the arbiter itself kept the correct fact ($9/14$).
-In this configuration protected survival equals arbiter accuracy; we read this
-as a hypothesis about the mechanism, not a general bound.}
+\caption{Guardian 1.0, a same-family arbiter: protected survival (9/14, 64.3\%)
+equals the fraction of traps on which the arbiter itself kept the correct fact
+(9/14). We read this as a hypothesis about the mechanism, not a general bound.}
 \label{fig:guard1}
 \end{figure}
 
@@ -711,6 +710,9 @@ correction held only when its criterion came from outside the model.
 % ---------------------------------------------------------------------------
 Every number above is a verbatim output of, or arithmetic on, a committed run;
 derived numbers are recomputed by \texttt{derived\_numbers.py}.
+The look-ahead and timing counts (Section~7, Table~3 note) additionally require
+the ForecastBench predictions, regenerated as described in DATA.md, since
+ForecastBench data are not redistributed.
 Part~1 (Experiments 1, 4, 5): \url{https://github.com/SergheiBrinza/scar-survival}.
 Part~2 (Experiments 2, 3): \url{https://github.com/SergheiBrinza/external-grounding}.
 Part~3 (Experiment 6): \url{https://github.com/SergheiBrinza/thin-channel}.
