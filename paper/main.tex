@@ -142,8 +142,8 @@ deterministically reproduces the same state, so 100\% survival across reloads is
 partly a property of that determinism. The contribution lies elsewhere:
 (i) that the protocol is portable across models and domains
 (Section~\ref{sec:validation}), (ii) that it discriminates real from fake
-interventions (Section~\ref{sec:validation}), and (iii) that it exposes and then
-closes a real failure mode --- memory pollution --- with an external source of
+interventions (Section~\ref{sec:validation}), and (iii) that it exposes a real failure mode --- memory pollution --- and
+repairs it on the evaluation traps with an external source of
 truth (Section~\ref{sec:grounding}).
 
 % ---------------------------------------------------------------------------
@@ -477,7 +477,9 @@ retrieval engineering (Experiment 3).}
 \paragraph{Interpretation.} Three lessons. (a) The truth-blindness limit is
 closed by a \emph{combination} --- external source \emph{and} retrieval
 engineering \emph{and} clean, unambiguous traps --- not by any single trick;
-remove one and the ceiling drops. (b) Not every trade-off is fundamental: the
+in our runs, survival is lower without the external source (Guardian~1.0,
+64.3\%), without the targeted fixes (Guardian~2.0/2.1, 71.4\%), or without
+disambiguating \#46 (13/14). (b) Not every trade-off is fundamental: the
 apparent precision/recall conflict at 2.1 dissolved once the tool was made
 smarter (keep by default, drop only explicit namesakes). (c) A real external
 source audits the \emph{test set}, not just the model: trap~\#46 (``is a day on
@@ -569,9 +571,8 @@ date; it is therefore an optimistic, look-ahead figure. Under the online daily
 schedule, where each hold-out forecast sees only outcomes already revealed, the
 mixture scores $0.2050$ and base-rate-only $0.2103$. The mixture beats the raw
 model by $0.109$ Brier offline and $0.093$ online, but beats base-rate-only by
-only $0.0001$ offline and $0.0054$ online: in both regimes nearly all of the
-usable signal is the topic base rate: in the offline and the daily online
-regime the raw model adds at most $0.0054$ Brier on top of it. Across all ten
+only $0.0001$ offline and $0.0054$ online, so in both regimes nearly all of the
+usable signal is the topic base rate. Across all ten
 tested schedules, base-rate-only minus mixture ranges from $-0.0033$ (year,
 where the mixture is worse than base-rate-only) to $+0.0150$ (270 days). We state this plainly, without dressing the calibrator up as a
 competent forecaster.
@@ -708,8 +709,8 @@ resolution.
 \section{Conclusion}
 % ---------------------------------------------------------------------------
 
-A memorized error in a frozen language model can be corrected durably, without
-touching a weight, by an external notebook (with or without contrastive
+A confidently wrong answer from a frozen language model can be overridden
+persistently, without touching a weight, by an external notebook (with or without contrastive
 decoding), but the
 mechanism is blind to truth, and two to three plausible distractors (two on 13
 traps, three on one) next to the truth halve its survival. In our setting neither the model nor a same-family copy supplied
