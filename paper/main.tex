@@ -25,8 +25,8 @@
 \newcommand{\todo}[1]{\textcolor{red}{[\textbf{TODO:} #1]}}
 \newcommand{\scar}{scar\nobreakdash-survival rate}
 
-\title{\textbf{The Second Loop: Durable Correction of Memorized Errors in
-Frozen Language Models}}
+\title{\textbf{The Second Loop: Persistence, Contamination, and External
+Verification of Factual Corrections in Frozen Language Models}}
 
 \author{
   Serghei Brinza\\
@@ -51,37 +51,28 @@ Interactive result viewers:
 \endgroup
 
 \begin{abstract}
-A frozen language model that has memorized a wrong fact repeats it even when the
-correct fact is placed in its context. We study whether such an error can be
-corrected \emph{durably} --- surviving a full process reload --- without
-touching a single weight, and where the criterion of truth for such a correction
-must live. We introduce the \textbf{\scar{}}: the fraction of trap facts on
-which an external correction mechanism keeps beating the model's memorized
-instinct across $N$ full reloads, scored by a separate semantic judge over
-the generated answer. On a frozen Qwen2.5-3B-Instruct subject, a per-fact
-notebook with contrastive decoding turns $0/14$ correct answers into $14/14$
-(the plain notebook without contrastive decoding also reaches $14/14$, so
-contrastive decoding shows no advantage on accuracy; its effect appears in the
-probability margin on the correct answer) and
-holds them across ten reloads --- 100\% under a deliberately deterministic setup
-(frozen weights, static notebook, greedy decoding) --- and under
-stochastic-decoding stress (700 samples at temperature 0.7), with 92.9\% under
-up to $+500$ entries of notebook ballast. The mechanism has one sharp failure mode: it
-is \emph{blind to truth}. Two to three plausible distractors (two on 13 traps,
-three on one) placed next to the truth halve survival to 50\%. A gatekeeper built from a same-family model cannot close the
-gap --- it inherits the subject's blind spots and reaches 64.3\%, equal in this configuration to its
-own accuracy --- whereas a gatekeeper grounded in live Wikipedia plus targeted
-retrieval engineering restores 92.9\% ($13/14$), and 100\% once one genuinely
-ambiguous trap is disambiguated. The metric ports across three models and two
-fact domains (100\% in all six cells, 540 answers) and discriminates a real
-correction from cosmetic and placebo variants (100\% / 0\% / 14.3\%). A separate
-probe asks the opposite question --- how rarely external truth can arrive before
-a self-calibrating frozen forecaster drifts --- over 1{,}646 resolved
-ForecastBench questions and eleven reveal schedules: any finite contact holds;
-only zero contact fails. We read the whole arc through Tarski's undefinability
-of truth as an organizing analogy: in our setting neither the subject nor its
-same-family copy supplied a working criterion of truth; a properly integrated
-external source did.
+A frozen language model can answer a factual question confidently and wrongly.
+We study external corrections that leave every weight unchanged: a per-fact
+notebook supplied in context, optionally combined with context-contrastive
+decoding. We define the \textbf{\scar{}}, the fraction of initially failed
+probes answered correctly in every one of $N$ full process reloads, scored by a
+separate model-based judge against a reference fact. On 14 probes that frozen
+Qwen2.5-3B-Instruct answers wrongly unassisted ($0/14$), both the plain notebook
+and contrastive decoding reach $14/14$; contrastive decoding raises the
+probability margin but not accuracy. Under deterministic decoding the result
+repeats across ten reloads, which shows persistence of the external pipeline
+rather than learning in the model; it also holds over 700 stochastic samples
+and at 92.9\% with 500 ballast entries. The weak point is memory contamination:
+two to three plausible distractors beside the reference halve survival to
+$7/14$. A same-family arbiter raises this to $9/14$, equal in our setting to its
+own accuracy on these probes; live Wikipedia retrieval with targeted conflict
+handling reaches $13/14$ on the original probes and $14/14$ after
+disambiguating one, with fixes motivated by failures on the same probes.
+Controls separate persistent, transient and placebo interventions (100\%, 0\%,
+14.3\%), and the protocol transfers to three models and two fact sets. A
+separate probe on 1{,}646 ForecastBench questions shows that, for a
+low-capacity Beta calibrator, each of ten tested feedback schedules outperforms
+no feedback, with nearly all of the gain coming from topic base rates.
 \end{abstract}
 
 % ---------------------------------------------------------------------------
@@ -89,10 +80,13 @@ external source did.
 % ---------------------------------------------------------------------------
 
 Instruction-tuned language models carry \emph{memorized instincts}: firmly
-encoded answers that the model emits with high confidence. When such an instinct
-is wrong --- the tallest mountain measured base-to-peak, the first animals sent
-to space, the exact wording of a famous film line --- the model repeats the error
-even when the correct fact is available to it in context. The standard remedy,
+encoded answers that the model emits with high confidence. Such instincts can
+be wrong --- the tallest mountain measured base-to-peak, the first animals sent
+to space, the exact wording of a famous film line --- and prior work shows that
+models sometimes keep such answers even when contrary evidence is in context
+\citep{longpre2021entity, xie2024adaptive}. In our setup the evidence alone
+suffices on all 14 probes (Section~\ref{sec:exp1}); the question we study is
+whether such an external override persists across reloads and what breaks it. The standard remedy,
 weight editing or fine-tuning, changes the object we are trying to study and
 raises its own durability questions.
 
@@ -101,7 +95,8 @@ model is a \emph{frozen subject}: its weights never change. Can we correct a
 memorized error with an external mechanism, and will that correction be
 \emph{durable}: specifically, will it survive a full process reload of the
 model, or is it only a cosmetic effect that vanishes with process memory? We
-call a durable correction a \textbf{scar}, and we call the whole research program
+call a durable correction a \textbf{scar}, that is, a persistent external
+override, and we call the whole research program
 the \textbf{Second Loop}: correction that closes back on itself and holds across
 reloads.
 
@@ -123,8 +118,8 @@ three on one). The mechanism is blind to truth.
 (Section~\ref{sec:grounding}, Experiments~2--3). A gatekeeper made from a same-family model reaches
 64.3\%: it shares the subject's blind spots. Replacing it with a real external
 source (live Wikipedia) plus targeted retrieval engineering restores 92.9\%, and
-100\% after disambiguating one trap. We connect this to Tarski's undefinability
-of truth.
+100\% after disambiguating one trap. We discuss this as an analogy to Tarski's
+undefinability of truth (Section~\ref{sec:grounding}).
 
 \item \textbf{Metric validation} (Section~\ref{sec:validation}, Experiments~4--5). The metric
 ports across three models and two fact domains (100\% in all six cells) and
@@ -134,8 +129,9 @@ discriminates a real scar from cosmetic and placebo controls (100\% / 0\% /
 \item \textbf{The opposite bound} (Section~\ref{sec:thin}, Experiment~6). Using resolved
 forecasting questions as a stream of ``truth from the future,'' we sweep how
 rarely external feedback can arrive before a self-calibrating frozen system
-drifts. The collapse is binary: any finite contact holds; only zero contact
-fails.
+drifts. All ten tested feedback schedules outperform no feedback under a
+low-capacity calibrator; the no-feedback score equals the raw model by
+construction.
 \end{enumerate}
 
 A note on honesty of claims, stated up front because it governs how every number
@@ -169,8 +165,10 @@ frequently revert to the memorized answer. This context--memory conflict is
 documented from entity-substitution studies \citep{longpre2021entity} through
 controlled behavioral analyses \citep{xie2024adaptive}, and is systematized in
 the survey of \citet{xu2024knowledge}. Our traps are a deliberately adversarial
-instance: fourteen facts on which the subject's parametric prior confidently
-beats a correct in-context fact. The failure mode of \S4 (the corrector
+instance: fourteen facts on which the subject's unassisted answer is
+confidently wrong; in our setting the correct in-context fact alone overrides
+all fourteen (Section~\ref{sec:exp1}), so the conflict we stress is the
+inter-context one, contradictory entries inside the notebook. The failure mode of \S4 (the corrector
 amplifying a plausible distractor) is the inter-context variant of the same
 conflict, arising when the notebook itself carries contradictory entries.
 
@@ -245,6 +243,12 @@ $\text{verdict}(t,n)=J(\text{answer}(t,n),\text{gold}(t))$. Then
 \frac{\bigl|\{\, t\in T : \forall\, n\in\{1,\dots,N\},\ \text{verdict}(t,n)=\texttt{correct} \,\}\bigr|}{|T|}.
 \end{equation}
 %
+Under deterministic decoding with a static notebook, all $N$ reloads yield the
+same answer, so the \scar{} reduces to single-run accuracy; the reload axis
+becomes informative only when something can vary across reloads (stochastic
+decoding, notebook state, or the presence of the notebook itself, as in the
+controls of Section~\ref{sec:validation}).
+
 Two design choices matter. First, each reload $n$ is a \emph{separate operating
 system process}: the model is fully unloaded and reloaded from scratch and the
 notebook is re-read from disk, so a ``cosmetic'' correction that lives only in
@@ -324,14 +328,6 @@ a consequence of the deterministic setup; the value of the run is that it
 establishes the protocol and the baseline against which the stress tests and the
 discrimination controls (Section~\ref{sec:validation}) are read.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.62\linewidth]{fig1_scar_survival.png}
-\caption{Scar survival across ten full process reloads (Experiment 1):
-$14/14$ traps held in every cycle.}
-\label{fig:scar}
-\end{figure}
-
 \paragraph{Stress tests.} We then probe the override under pressure on the
 notebook itself (Table~\ref{tab:stress}, Figure~\ref{fig:stress}). It survives a
 growing notebook (up to $+500$ ballast entries, 92.9\%) and stochastic decoding
@@ -342,6 +338,23 @@ truth, survival drops to $50\%$ ($7/14$). Under this load the model copied the
 false distractor verbatim (``3 seconds,'' ``K2,'' ``Play it again, Sam,''
 ``Laika,'' ``Steamboat Willie''), and on two traps the Confidence Gain went
 negative.
+
+\paragraph{A methodological caveat.} Confidence Gain overestimates robustness
+under noise. It compares the correct answer against a single canonical wrong one,
+but free generation can latch onto a \emph{third} distractor outside that
+comparison (on trap~\#20 the metric read $+0.90$ while the model generated
+``K2''). The honest measure is therefore the semantic judge over the actual
+answer; we keep Confidence Gain only as an indicator of override strength, not as
+proof of correctness. This is why the metric in Section~\ref{sec:metric} is
+defined over $J$, not over probabilities.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.62\linewidth]{fig1_scar_survival.png}
+\caption{Scar survival across ten full process reloads (Experiment 1):
+$14/14$ traps held in every cycle.}
+\label{fig:scar}
+\end{figure}
 
 \begin{table}[t]
 \centering
@@ -369,18 +382,9 @@ pollution, not wear, is the failure mode.}
 \label{fig:stress}
 \end{figure}
 
-\paragraph{A methodological caveat.} Confidence Gain overestimates robustness
-under noise. It compares the correct answer against a single canonical wrong one,
-but free generation can latch onto a \emph{third} distractor outside that
-comparison (on trap~\#20 the metric read $+0.90$ while the model generated
-``K2''). The honest measure is therefore the semantic judge over the actual
-answer; we keep Confidence Gain only as an indicator of override strength, not as
-proof of correctness. This is why the metric in Section~\ref{sec:metric} is
-defined over $J$, not over probabilities.
-
 \paragraph{Takeaway.} The ceiling of the mechanism is \emph{notebook quality},
-not its size, decoding randomness, or instinct strength. Contrastive decoding
-breaks through the most stubborn instinct, but it will amplify two to three
+not its size, decoding randomness, or instinct strength. The mechanism holds
+even on the stickiest instincts, but it will amplify two to three
 plausible distractors (two on 13 traps, three on one) sitting next to the truth
 just as readily, especially when a distractor coincides with the model's own
 instinct. This motivates Part~2.
@@ -566,26 +570,33 @@ schedule, where each hold-out forecast sees only outcomes already revealed, the
 mixture scores $0.2050$ and base-rate-only $0.2103$. The mixture beats the raw
 model by $0.109$ Brier offline and $0.093$ online, but beats base-rate-only by
 only $0.0001$ offline and $0.0054$ online: in both regimes nearly all of the
-usable signal is the topic base rate, and the raw model adds at most $0.0054$
-Brier on top of it. We state this plainly, without dressing the calibrator up as a
+usable signal is the topic base rate: in the offline and the daily online
+regime the raw model adds at most $0.0054$ Brier on top of it. Across all ten
+tested schedules, base-rate-only minus mixture ranges from $-0.0033$ (year,
+where the mixture is worse than base-rate-only) to $+0.0150$ (270 days). We state this plainly, without dressing the calibrator up as a
 competent forecaster.
 
-\paragraph{The collapse is binary.} Sweeping the reveal schedule
-(Table~\ref{tab:sweep}, Figure~\ref{fig:thin}), all ten \emph{finite} schedules,
+\paragraph{No feedback versus some feedback.} The calibrator mixes the raw
+forecast with the topic base rate, $p_{\text{final}}=(1-\lambda)\,p_{\text{raw}}
++\lambda\,p_{\text{base}}$ with $\lambda=n/(n+K)$, where $n$ is the number of
+revealed outcomes in the topic. Sweeping the reveal schedule
+(Table~\ref{tab:sweep}, Figure~\ref{fig:thin}), all ten tested schedules,
 from daily down to once a year, land in hold-out Brier $[0.205,0.220]$.
-Only ``never'' collapses to $0.298$, bit-for-bit the raw 3B baseline. Neither
+With no revealed outcomes $\lambda=0$, so ``never'' equals the raw model
+($0.298$) by construction. Neither
 frequency nor delivered volume is the binding constraint in this regime. The
 270-day schedule delivers 220 resolutions and reaches Brier $0.216$; the daily
 schedule delivers 1{,}316 and reaches $0.205$. A six-fold difference in
-delivered signal moves the score by $0.011$, while the gap between any finite
-schedule and no contact at all is $0.078$ to $0.093$. With 9 topics at $K=10$ the
+delivered signal moves the score by $0.011$, while the gap between any tested
+schedule and no feedback is $0.078$ to $0.093$. With 9 topics at $K=10$ the
 calibration saturates after a few hundred resolutions, so the experiment
 separates contact from no contact and says nothing finer.
 
 \begin{table}[!htbp]
 \centering
 \caption{Hold-out Brier ($N=330$) across eleven reveal schedules (Experiment 6).
-Any finite contact holds; only ``never'' collapses to the raw baseline.}
+All ten tested schedules beat no feedback; ``never'' equals the raw model by
+construction.}
 \label{tab:sweep}
 \begin{tabular}{lccc}
 \toprule
@@ -614,7 +625,7 @@ Because no question resolves between days 361 and 365, the 180-day and 365-day
 schedules deliver the same 417 resolutions, while the 270-day schedule delivers
 only 220. The column reports how much signal reached the calibrator inside the
 simulated window, not how often the schedule fires.
-Equal volume does not imply equal score, but the differences among finite
+Equal volume does not imply equal score, but the differences among tested
 schedules should not be read as an ordering. On the 330-question hold-out the
 spread between them is 0.015 Brier (0.2050 to 0.2202). Per-question outcomes
 were not retained in the sweep, so we report this spread descriptively and do
@@ -624,16 +635,16 @@ the 180-day schedule delivers its first batch before the hold-out period begins,
 whereas the 365-day schedule delivers nothing until day 365, leaving its
 earliest hold-out forecasts uncalibrated (64 of the 330 hold-out forecasts fall
 before day 365). The claim we stand behind is the gap
-between any finite schedule and no contact at all, which is 0.078 to 0.093,
-about five times the spread among finite schedules.}
+between any tested schedule and no feedback, which is 0.078 to 0.093,
+about five times the spread among tested schedules.}
 \end{table}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.9\linewidth]{fig6_thin_channel.png}
 \caption{The thin channel (Experiment 6): hold-out Brier vs.\ reveal period.
-Every finite schedule holds near $0.21$; only zero contact collapses to the raw
-baseline $0.298$.}
+Every tested schedule holds near $0.21$; no feedback equals the raw model
+($0.298$) by construction.}
 \label{fig:thin}
 \end{figure}
 
@@ -668,7 +679,7 @@ this: the gatekeeper filters what enters the notebook, whereas the reference $J$
 scores against remains the entry itself. The judge and the Guardian~1.0 arbiter
 use the same model (Qwen/Qwen2.5-7B-Instruct, revision not pinned). For trap
 \#46 the reference entry itself was revised (Section~\ref{sec:grounding}).
-\item \textbf{Thin channel is a single calibrator.} The binary-cliff result holds
+\item \textbf{Thin channel is a single calibrator.} The feedback-versus-no-feedback result holds
 for per-topic Beta calibration with 9 topics at $K=10$; a richer calibrator with
 more capacity might show a graded, rather than binary, dependence on frequency.
 \item \textbf{Guardian 2.x was tuned on the evaluation traps.} The 2.1--2.3
@@ -702,7 +713,7 @@ across models and domains and discriminates real corrections from cosmetic and
 placebo ones. And when external truth is the healing agent, the low-capacity
 calibrator used here saturates after a few hundred resolutions: within that
 regime neither arrival rate nor delivered volume separates the schedules, and
-only zero contact fails. Across the three parts the pattern is the same: the
+every tested schedule beat no feedback. Across the three parts the pattern is the same: the
 correction held only when its criterion came from outside the model.
 
 % ---------------------------------------------------------------------------
